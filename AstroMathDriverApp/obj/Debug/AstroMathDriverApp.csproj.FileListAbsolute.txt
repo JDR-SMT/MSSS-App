@@ -1,0 +1,10 @@
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\obj\Debug\AstroMathDriverApp.csproj.AssemblyReference.cache
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\obj\Debug\AstroMathDriverApp.csproj.CoreCompileInputs.cache
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\bin\Debug\AstroMathDriverApp.exe.config
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\bin\Debug\AstroMathDriverApp.exe
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\bin\Debug\AstroMathDriverApp.pdb
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\bin\Debug\AstroMath.dll
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\bin\Debug\AstroMath.pdb
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\obj\Debug\AstroMat.44CBC089.Up2Date
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\obj\Debug\AstroMathDriverApp.exe
+C:\- Obi\OneDrive\Code\VS\MSSSApp\AstroMathDriverApp\obj\Debug\AstroMathDriverApp.pdb
