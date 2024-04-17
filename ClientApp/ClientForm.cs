@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
 using System.ServiceModel;
 using System.Windows.Forms;
 
@@ -11,15 +14,61 @@ namespace ClientApp
 			InitializeComponent();
 		}
 
-		int rowStarVelocity = 0;
-		int rowStarDistance = 0;
-		int rowKelvin = 0;
-		int rowEventHorizon = 0;
+		// global variables
+		DataTable dataTable = new DataTable();
+		Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
+		List<string> listVelocity = new List<string>();
+		List<string> listDistance = new List<string>();
+		List<string> listKelvin = new List<string>();
+		List<string> listRadius = new List<string>();
 
-		private void ButtonCalculate_Click(object sender, System.EventArgs e)
+		private void PopulateDataTable()
 		{
-			DataGridViewOutput.Rows.Add(1);
+			// clear dictionary and data table
+			dictionary.Clear();
+			dataTable.Columns.Clear();
+			dataTable.Clear();
 
+			// add column names with associated lists to dictionary
+			dictionary.Add("Star Velocity", listVelocity);
+			dictionary.Add("Star Distance", listDistance);
+			dictionary.Add("Kelvin", listKelvin);
+			dictionary.Add("Event Horizon", listRadius);
+
+			// add data table columns using dictionary keys
+			foreach (var key in dictionary.Keys)
+			{
+				dataTable.Columns.Add(key);
+			}
+
+			// count each list in the dictionary and return the max number of rows
+			int count = dictionary.Values.Max(list => list.Count);
+
+			// add the list associated with the dictionary key to the data table
+			for (int i = 0; i < count; i++)
+			{
+				var row = dataTable.Rows.Add();
+
+				foreach (var key in dictionary.Keys)
+				{
+					try
+					{
+						row[key] = dictionary[key][i];
+					}
+					// if list associated with dictionary key is empty
+					catch
+					{
+						row[key] = null;
+					}
+				}
+			}
+
+			// set data table as data source
+			DataGridViewOutput.DataSource = dataTable;
+		}
+
+		private void ButtonCalculate_Click(object sender, EventArgs e)
+		{
 			if (!string.IsNullOrEmpty(TextBoxInputWavelengthObserved.Text) && !string.IsNullOrEmpty(TextBoxInputWavelengthRest.Text))
 			{
 				double observed = double.Parse(TextBoxInputWavelengthObserved.Text);
@@ -63,11 +112,10 @@ namespace ClientApp
 			// calculate star velocity
 			double velocity = channel.StarVelocity(observed, rest);
 
-			// round and add value to DataGridViewOutput column Star Velocity
-			DataGridViewOutput[0, rowStarVelocity].Value = Math.Round(velocity, 0);
+			// round and add value to list as string
+			listVelocity.Add(Math.Round(velocity, 0).ToString());
 
-			// increase row counter
-			rowStarVelocity++;
+			PopulateDataTable();
 		}
 
 		private void StarDistance(double parallax)
@@ -87,11 +135,10 @@ namespace ClientApp
 			// calculate star distance
 			double distance = channel.StarDistance(parallax);
 
-			// round and add value to DataGridViewOutput column Star Distance
-			DataGridViewOutput[1, rowStarDistance].Value = Math.Round(distance, 2);
+			// round and add value to list as string
+			listDistance.Add(Math.Round(distance, 2).ToString());
 
-			// increase row counter
-			rowStarDistance++;
+			PopulateDataTable();
 		}
 
 		private void Kelvin(double celsius)
@@ -111,11 +158,10 @@ namespace ClientApp
 			// calculate Kelvin temperature
 			double kelvin = channel.Kelvin(celsius);
 
-			// round and add value to DataGridViewOutput column Kelvin
-			DataGridViewOutput[2, rowKelvin].Value = kelvin;
+			// add value to list as string
+			listKelvin.Add(kelvin.ToString());
 
-			// increase row counter
-			rowKelvin++;
+			PopulateDataTable();
 		}
 
 		private void EventHorizon(double mass)
@@ -135,10 +181,10 @@ namespace ClientApp
 			// calculate event horizon
 			double radius = channel.EventHorizon(mass);
 
-			DataGridViewOutput[3, rowEventHorizon].Value = radius.ToString("E1");
+			// format and add value to list as string
+			listRadius.Add(radius.ToString("E1"));
 
-			// increase row counter
-			rowEventHorizon++;
+			PopulateDataTable();
 		}
 	}
 }

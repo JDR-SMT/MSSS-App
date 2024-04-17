@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|solutionrelative:clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|c:\\- obi\\onedrive\\code\\vs\\msssapp\\clientapp\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|solutionrelative:clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\iastrocontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|solutionrelative:iastrocontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|c:\\- obi\\onedrive\\code\\vs\\msssapp\\clientapp\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|solutionrelative:clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|solutionrelative:clientform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "ClientForm.Designer.cs",
+              "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\ClientForm.Designer.cs",
+              "RelativeDocumentMoniker": "ClientForm.Designer.cs",
+              "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\ClientForm.Designer.cs",
+              "RelativeToolTip": "ClientForm.Designer.cs",
+              "ViewState": "AQIAAE0BAAAAAAAAAAAYwGoBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T12:50:38.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "ClientForm.cs [Design]",
               "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\ClientForm.cs",
               "RelativeDocumentMoniker": "ClientForm.cs",
@@ -54,41 +63,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IAstroContract.cs",
-              "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\IAstroContract.cs",
-              "RelativeDocumentMoniker": "IAstroContract.cs",
-              "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\IAstroContract.cs",
-              "RelativeToolTip": "IAstroContract.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T11:52:29.421Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ClientForm.cs",
               "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\ClientForm.cs",
               "RelativeDocumentMoniker": "ClientForm.cs",
               "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\ClientForm.cs",
               "RelativeToolTip": "ClientForm.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T12:27:56.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientForm.Designer.cs",
-              "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\ClientForm.Designer.cs",
-              "RelativeDocumentMoniker": "ClientForm.Designer.cs",
-              "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\ClientForm.Designer.cs",
-              "RelativeToolTip": "ClientForm.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T12:50:38.123Z",
               "EditorCaption": ""
             }
           ]

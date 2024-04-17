@@ -43,10 +43,6 @@
 			this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.DataGridViewOutput = new System.Windows.Forms.DataGridView();
-			this.ColumnOutputStarVelocity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ColumnOutputStarDistance = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ColumnOutputKelvin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.ColumnOutputEventHorizon = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.TextBoxInputWavelengthObserved = new System.Windows.Forms.TextBox();
@@ -78,7 +74,7 @@
             this.styleToolStripMenuItem});
 			this.menuStrip2.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip2.Name = "menuStrip2";
-			this.menuStrip2.Size = new System.Drawing.Size(842, 30);
+			this.menuStrip2.Size = new System.Drawing.Size(842, 28);
 			this.menuStrip2.TabIndex = 1;
 			this.menuStrip2.Text = "menuStrip2";
 			// 
@@ -181,11 +177,6 @@
 			this.DataGridViewOutput.AllowUserToAddRows = false;
 			this.DataGridViewOutput.AllowUserToDeleteRows = false;
 			this.DataGridViewOutput.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.DataGridViewOutput.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColumnOutputStarVelocity,
-            this.ColumnOutputStarDistance,
-            this.ColumnOutputKelvin,
-            this.ColumnOutputEventHorizon});
 			this.DataGridViewOutput.Location = new System.Drawing.Point(290, 50);
 			this.DataGridViewOutput.Name = "DataGridViewOutput";
 			this.DataGridViewOutput.ReadOnly = true;
@@ -194,38 +185,6 @@
 			this.DataGridViewOutput.RowTemplate.Height = 24;
 			this.DataGridViewOutput.Size = new System.Drawing.Size(530, 530);
 			this.DataGridViewOutput.TabIndex = 3;
-			// 
-			// ColumnOutputStarVelocity
-			// 
-			this.ColumnOutputStarVelocity.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.ColumnOutputStarVelocity.HeaderText = "Star Velocity";
-			this.ColumnOutputStarVelocity.MinimumWidth = 6;
-			this.ColumnOutputStarVelocity.Name = "ColumnOutputStarVelocity";
-			this.ColumnOutputStarVelocity.ReadOnly = true;
-			// 
-			// ColumnOutputStarDistance
-			// 
-			this.ColumnOutputStarDistance.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.ColumnOutputStarDistance.HeaderText = "Star Distance";
-			this.ColumnOutputStarDistance.MinimumWidth = 6;
-			this.ColumnOutputStarDistance.Name = "ColumnOutputStarDistance";
-			this.ColumnOutputStarDistance.ReadOnly = true;
-			// 
-			// ColumnOutputKelvin
-			// 
-			this.ColumnOutputKelvin.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.ColumnOutputKelvin.HeaderText = "Kelvin";
-			this.ColumnOutputKelvin.MinimumWidth = 6;
-			this.ColumnOutputKelvin.Name = "ColumnOutputKelvin";
-			this.ColumnOutputKelvin.ReadOnly = true;
-			// 
-			// ColumnOutputEventHorizon
-			// 
-			this.ColumnOutputEventHorizon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-			this.ColumnOutputEventHorizon.HeaderText = "Event Horizon";
-			this.ColumnOutputEventHorizon.MinimumWidth = 6;
-			this.ColumnOutputEventHorizon.Name = "ColumnOutputEventHorizon";
-			this.ColumnOutputEventHorizon.ReadOnly = true;
 			// 
 			// label1
 			// 
@@ -452,10 +411,6 @@
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.NumericUpDown NumericUpDownInputMass;
 		private System.Windows.Forms.Label label10;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnOutputStarVelocity;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnOutputStarDistance;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnOutputKelvin;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnOutputEventHorizon;
 	}
 }
 
