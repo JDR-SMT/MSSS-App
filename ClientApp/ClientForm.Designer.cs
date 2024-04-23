@@ -28,19 +28,20 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.menuStrip2 = new System.Windows.Forms.MenuStrip();
-			this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.germanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.lightModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.darkModeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.customToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.foregroundColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.backgroundColourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.styleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClientForm));
+			this.menuStrip = new System.Windows.Forms.MenuStrip();
+			this.ToolStripMenuItemLanguage = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemFrench = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemGerman = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemEnglish = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemTheme = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemLight = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemDark = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemCustom = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemForeColor = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemBackColor = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemStyle = new System.Windows.Forms.ToolStripMenuItem();
+			this.ToolStripMenuItemFont = new System.Windows.Forms.ToolStripMenuItem();
 			this.statusStrip1 = new System.Windows.Forms.StatusStrip();
 			this.DataGridViewOutput = new System.Windows.Forms.DataGridView();
 			this.label1 = new System.Windows.Forms.Label();
@@ -60,108 +61,124 @@
 			this.label9 = new System.Windows.Forms.Label();
 			this.NumericUpDownInputMass = new System.Windows.Forms.NumericUpDown();
 			this.label10 = new System.Windows.Forms.Label();
-			this.menuStrip2.SuspendLayout();
+			this.colorDialog = new System.Windows.Forms.ColorDialog();
+			this.fontDialog = new System.Windows.Forms.FontDialog();
+			this.menuStrip.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DataGridViewOutput)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.NumericUpDownInputMass)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// menuStrip2
+			// menuStrip
 			// 
-			this.menuStrip2.ImageScalingSize = new System.Drawing.Size(20, 20);
-			this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.languageToolStripMenuItem,
-            this.themeToolStripMenuItem,
-            this.styleToolStripMenuItem});
-			this.menuStrip2.Location = new System.Drawing.Point(0, 0);
-			this.menuStrip2.Name = "menuStrip2";
-			this.menuStrip2.Size = new System.Drawing.Size(842, 28);
-			this.menuStrip2.TabIndex = 1;
-			this.menuStrip2.Text = "menuStrip2";
+			this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
+			this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemLanguage,
+            this.ToolStripMenuItemTheme,
+            this.ToolStripMenuItemStyle});
+			this.menuStrip.Location = new System.Drawing.Point(0, 0);
+			this.menuStrip.Name = "menuStrip";
+			this.menuStrip.Size = new System.Drawing.Size(842, 28);
+			this.menuStrip.TabIndex = 1;
+			this.menuStrip.Text = "menuStrip";
 			// 
-			// languageToolStripMenuItem
+			// ToolStripMenuItemLanguage
 			// 
-			this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.frenchToolStripMenuItem,
-            this.germanToolStripMenuItem,
-            this.englishToolStripMenuItem});
-			this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-			this.languageToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
-			this.languageToolStripMenuItem.Text = "Language";
+			this.ToolStripMenuItemLanguage.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemFrench,
+            this.ToolStripMenuItemGerman,
+            this.ToolStripMenuItemEnglish});
+			this.ToolStripMenuItemLanguage.Name = "ToolStripMenuItemLanguage";
+			this.ToolStripMenuItemLanguage.Size = new System.Drawing.Size(88, 24);
+			this.ToolStripMenuItemLanguage.Text = "Language";
 			// 
-			// frenchToolStripMenuItem
+			// ToolStripMenuItemFrench
 			// 
-			this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-			this.frenchToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
-			this.frenchToolStripMenuItem.Text = "French";
+			this.ToolStripMenuItemFrench.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItemFrench.Image")));
+			this.ToolStripMenuItemFrench.Name = "ToolStripMenuItemFrench";
+			this.ToolStripMenuItemFrench.Size = new System.Drawing.Size(224, 26);
+			this.ToolStripMenuItemFrench.Text = "French";
 			// 
-			// germanToolStripMenuItem
+			// ToolStripMenuItemGerman
 			// 
-			this.germanToolStripMenuItem.Name = "germanToolStripMenuItem";
-			this.germanToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
-			this.germanToolStripMenuItem.Text = "German";
+			this.ToolStripMenuItemGerman.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItemGerman.Image")));
+			this.ToolStripMenuItemGerman.Name = "ToolStripMenuItemGerman";
+			this.ToolStripMenuItemGerman.Size = new System.Drawing.Size(224, 26);
+			this.ToolStripMenuItemGerman.Text = "German";
 			// 
-			// englishToolStripMenuItem
+			// ToolStripMenuItemEnglish
 			// 
-			this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-			this.englishToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
-			this.englishToolStripMenuItem.Text = "English";
+			this.ToolStripMenuItemEnglish.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItemEnglish.Image")));
+			this.ToolStripMenuItemEnglish.Name = "ToolStripMenuItemEnglish";
+			this.ToolStripMenuItemEnglish.Size = new System.Drawing.Size(224, 26);
+			this.ToolStripMenuItemEnglish.Text = "English";
 			// 
-			// themeToolStripMenuItem
+			// ToolStripMenuItemTheme
 			// 
-			this.themeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lightModeToolStripMenuItem,
-            this.darkModeToolStripMenuItem,
-            this.customToolStripMenuItem});
-			this.themeToolStripMenuItem.Name = "themeToolStripMenuItem";
-			this.themeToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
-			this.themeToolStripMenuItem.Text = "Theme";
+			this.ToolStripMenuItemTheme.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemLight,
+            this.ToolStripMenuItemDark,
+            this.ToolStripMenuItemCustom});
+			this.ToolStripMenuItemTheme.Name = "ToolStripMenuItemTheme";
+			this.ToolStripMenuItemTheme.Size = new System.Drawing.Size(68, 24);
+			this.ToolStripMenuItemTheme.Text = "Theme";
 			// 
-			// lightModeToolStripMenuItem
+			// ToolStripMenuItemLight
 			// 
-			this.lightModeToolStripMenuItem.Name = "lightModeToolStripMenuItem";
-			this.lightModeToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
-			this.lightModeToolStripMenuItem.Text = "Light";
+			this.ToolStripMenuItemLight.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItemLight.Image")));
+			this.ToolStripMenuItemLight.Name = "ToolStripMenuItemLight";
+			this.ToolStripMenuItemLight.Size = new System.Drawing.Size(224, 26);
+			this.ToolStripMenuItemLight.Text = "Light";
+			this.ToolStripMenuItemLight.Click += new System.EventHandler(this.ToolStripMenuItemLight_Click);
 			// 
-			// darkModeToolStripMenuItem
+			// ToolStripMenuItemDark
 			// 
-			this.darkModeToolStripMenuItem.Name = "darkModeToolStripMenuItem";
-			this.darkModeToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
-			this.darkModeToolStripMenuItem.Text = "Dark";
+			this.ToolStripMenuItemDark.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItemDark.Image")));
+			this.ToolStripMenuItemDark.Name = "ToolStripMenuItemDark";
+			this.ToolStripMenuItemDark.Size = new System.Drawing.Size(224, 26);
+			this.ToolStripMenuItemDark.Text = "Dark";
+			this.ToolStripMenuItemDark.Click += new System.EventHandler(this.ToolStripMenuItemDark_Click);
 			// 
-			// customToolStripMenuItem
+			// ToolStripMenuItemCustom
 			// 
-			this.customToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.foregroundColourToolStripMenuItem,
-            this.backgroundColourToolStripMenuItem});
-			this.customToolStripMenuItem.Name = "customToolStripMenuItem";
-			this.customToolStripMenuItem.Size = new System.Drawing.Size(142, 26);
-			this.customToolStripMenuItem.Text = "Custom";
+			this.ToolStripMenuItemCustom.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemForeColor,
+            this.ToolStripMenuItemBackColor});
+			this.ToolStripMenuItemCustom.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItemCustom.Image")));
+			this.ToolStripMenuItemCustom.Name = "ToolStripMenuItemCustom";
+			this.ToolStripMenuItemCustom.Size = new System.Drawing.Size(224, 26);
+			this.ToolStripMenuItemCustom.Text = "Custom";
 			// 
-			// foregroundColourToolStripMenuItem
+			// ToolStripMenuItemForeColor
 			// 
-			this.foregroundColourToolStripMenuItem.Name = "foregroundColourToolStripMenuItem";
-			this.foregroundColourToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
-			this.foregroundColourToolStripMenuItem.Text = "Foreground Colour";
+			this.ToolStripMenuItemForeColor.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItemForeColor.Image")));
+			this.ToolStripMenuItemForeColor.Name = "ToolStripMenuItemForeColor";
+			this.ToolStripMenuItemForeColor.Size = new System.Drawing.Size(219, 26);
+			this.ToolStripMenuItemForeColor.Text = "Foreground Colour";
+			this.ToolStripMenuItemForeColor.Click += new System.EventHandler(this.ToolStripMenuItemForeColor_Click);
 			// 
-			// backgroundColourToolStripMenuItem
+			// ToolStripMenuItemBackColor
 			// 
-			this.backgroundColourToolStripMenuItem.Name = "backgroundColourToolStripMenuItem";
-			this.backgroundColourToolStripMenuItem.Size = new System.Drawing.Size(219, 26);
-			this.backgroundColourToolStripMenuItem.Text = "Background Colour";
+			this.ToolStripMenuItemBackColor.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItemBackColor.Image")));
+			this.ToolStripMenuItemBackColor.Name = "ToolStripMenuItemBackColor";
+			this.ToolStripMenuItemBackColor.Size = new System.Drawing.Size(219, 26);
+			this.ToolStripMenuItemBackColor.Text = "Background Colour";
+			this.ToolStripMenuItemBackColor.Click += new System.EventHandler(this.ToolStripMenuItemBackColor_Click);
 			// 
-			// styleToolStripMenuItem
+			// ToolStripMenuItemStyle
 			// 
-			this.styleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fontToolStripMenuItem});
-			this.styleToolStripMenuItem.Name = "styleToolStripMenuItem";
-			this.styleToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
-			this.styleToolStripMenuItem.Text = "Style";
+			this.ToolStripMenuItemStyle.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItemFont});
+			this.ToolStripMenuItemStyle.Name = "ToolStripMenuItemStyle";
+			this.ToolStripMenuItemStyle.Size = new System.Drawing.Size(55, 24);
+			this.ToolStripMenuItemStyle.Text = "Style";
 			// 
-			// fontToolStripMenuItem
+			// ToolStripMenuItemFont
 			// 
-			this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-			this.fontToolStripMenuItem.Size = new System.Drawing.Size(121, 26);
-			this.fontToolStripMenuItem.Text = "Font";
+			this.ToolStripMenuItemFont.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItemFont.Image")));
+			this.ToolStripMenuItemFont.Name = "ToolStripMenuItemFont";
+			this.ToolStripMenuItemFont.Size = new System.Drawing.Size(224, 26);
+			this.ToolStripMenuItemFont.Text = "Font";
+			this.ToolStripMenuItemFont.Click += new System.EventHandler(this.ToolStripMenuItemFont_Click);
 			// 
 			// statusStrip1
 			// 
@@ -342,6 +359,16 @@
 			this.label10.TabIndex = 27;
 			this.label10.Text = "x 10";
 			// 
+			// colorDialog
+			// 
+			this.colorDialog.AllowFullOpen = false;
+			// 
+			// fontDialog
+			// 
+			this.fontDialog.AllowVerticalFonts = false;
+			this.fontDialog.MaxSize = 14;
+			this.fontDialog.ShowEffects = false;
+			// 
 			// ClientForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -366,11 +393,14 @@
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.DataGridViewOutput);
 			this.Controls.Add(this.statusStrip1);
-			this.Controls.Add(this.menuStrip2);
+			this.Controls.Add(this.menuStrip);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.MaximizeBox = false;
 			this.Name = "ClientForm";
-			this.Text = "Form1";
-			this.menuStrip2.ResumeLayout(false);
-			this.menuStrip2.PerformLayout();
+			this.Text = "Malin Space Science Systems Application";
+			this.menuStrip.ResumeLayout(false);
+			this.menuStrip.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.DataGridViewOutput)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.NumericUpDownInputMass)).EndInit();
 			this.ResumeLayout(false);
@@ -379,19 +409,19 @@
 		}
 
 		#endregion
-		private System.Windows.Forms.MenuStrip menuStrip2;
-		private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem germanToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem styleToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem lightModeToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem darkModeToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem customToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem foregroundColourToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem backgroundColourToolStripMenuItem;
+		private System.Windows.Forms.MenuStrip menuStrip;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemLanguage;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemEnglish;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemFrench;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemGerman;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemTheme;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemStyle;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemLight;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemDark;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemCustom;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemFont;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemForeColor;
+		private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItemBackColor;
 		private System.Windows.Forms.StatusStrip statusStrip1;
 		private System.Windows.Forms.DataGridView DataGridViewOutput;
 		private System.Windows.Forms.Label label1;
@@ -411,6 +441,8 @@
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.NumericUpDown NumericUpDownInputMass;
 		private System.Windows.Forms.Label label10;
+		private System.Windows.Forms.ColorDialog colorDialog;
+		private System.Windows.Forms.FontDialog fontDialog;
 	}
 }
 

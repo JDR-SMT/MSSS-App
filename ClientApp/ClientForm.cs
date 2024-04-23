@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.ServiceModel;
 using System.Windows.Forms;
@@ -22,7 +23,8 @@ namespace ClientApp
 		List<string> listKelvin = new List<string>();
 		List<string> listRadius = new List<string>();
 
-		private void PopulateDataTable()
+		#region Display DataTable
+		private void DisplayDataTable()
 		{
 			// clear dictionary and data table
 			dictionary.Clear();
@@ -66,7 +68,9 @@ namespace ClientApp
 			// set data table as data source
 			DataGridViewOutput.DataSource = dataTable;
 		}
+		#endregion
 
+		#region Calculate Methods and Button
 		private void ButtonCalculate_Click(object sender, EventArgs e)
 		{
 			if (!string.IsNullOrEmpty(TextBoxInputWavelengthObserved.Text) && !string.IsNullOrEmpty(TextBoxInputWavelengthRest.Text))
@@ -115,7 +119,7 @@ namespace ClientApp
 			// round and add value to list as string
 			listVelocity.Add(Math.Round(velocity, 0).ToString());
 
-			PopulateDataTable();
+			DisplayDataTable();
 		}
 
 		private void StarDistance(double parallax)
@@ -138,7 +142,7 @@ namespace ClientApp
 			// round and add value to list as string
 			listDistance.Add(Math.Round(distance, 2).ToString());
 
-			PopulateDataTable();
+			DisplayDataTable();
 		}
 
 		private void Kelvin(double celsius)
@@ -161,7 +165,7 @@ namespace ClientApp
 			// add value to list as string
 			listKelvin.Add(kelvin.ToString());
 
-			PopulateDataTable();
+			DisplayDataTable();
 		}
 
 		private void EventHorizon(double mass)
@@ -184,7 +188,88 @@ namespace ClientApp
 			// format and add value to list as string
 			listRadius.Add(radius.ToString("E1"));
 
-			PopulateDataTable();
+			DisplayDataTable();
 		}
+		#endregion
+
+		#region Theme
+		private void ToolStripMenuItemLight_Click(object sender, EventArgs e)
+		{
+			SetColor(default, default);
+			ButtonCalculate.BackColor = Color.White;
+		}
+
+		private void ToolStripMenuItemDark_Click(object sender, EventArgs e)
+		{
+			SetColor(Color.White, Color.Black);
+		}
+
+		private void ToolStripMenuItemForeColor_Click(object sender, EventArgs e)
+		{
+			if (colorDialog.ShowDialog() == DialogResult.OK)
+			{
+				var foreColor = colorDialog.Color;
+
+				var backColor = Color.FromArgb(foreColor.ToArgb() ^ 0xffffff);
+
+				SetColor(foreColor, backColor);
+			}
+		}
+
+		private void ToolStripMenuItemBackColor_Click(object sender, EventArgs e)
+		{
+			if (colorDialog.ShowDialog() == DialogResult.OK)
+			{
+				var backColor = colorDialog.Color;
+
+				var foreColor = Color.FromArgb(backColor.ToArgb() ^ 0xffffff);
+
+				SetColor(foreColor, backColor);
+			}
+		}
+
+		private void SetColor(Color foreColor, Color backColor)
+		{
+			if (foreColor == Color.Gray)
+			{
+				foreColor = Color.FromArgb(Shift(foreColor.R), Shift(foreColor.G), Shift(foreColor.B));
+			}
+			else if (backColor == Color.Gray)
+			{
+				backColor = Color.FromArgb(Shift(backColor.R), Shift(backColor.G), Shift(backColor.B));
+			}
+
+			BackColor = backColor;
+
+			foreach (Control control in Controls)
+			{
+				control.ForeColor = foreColor;
+				control.BackColor = backColor;
+			}
+		}
+
+		private byte Shift(byte b)
+		{
+			return (byte)(b + 128); // b + 128 % 256 or b + 180 % 360
+		}
+		#endregion
+
+		#region Font
+		private void ToolStripMenuItemFont_Click(object sender, EventArgs e)
+		{
+			if (fontDialog.ShowDialog() == DialogResult.OK)
+			{
+				SetFont(fontDialog.Font);
+			}
+		}
+
+		private void SetFont(Font font)
+		{
+			foreach (Control control in Controls)
+			{
+				control.Font = font;
+			}
+		}
+		#endregion
 	}
 }
