@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
+using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
 using System.ServiceModel;
 using System.Windows.Forms;
 
@@ -15,91 +14,68 @@ namespace ClientApp
 			InitializeComponent();
 		}
 
-		// global variables
-		DataTable dataTable = new DataTable();
-		Dictionary<string, List<string>> dictionary = new Dictionary<string, List<string>>();
-		List<string> listVelocity = new List<string>();
-		List<string> listDistance = new List<string>();
-		List<string> listKelvin = new List<string>();
-		List<string> listRadius = new List<string>();
-
-		#region Display DataTable
-		private void DisplayDataTable()
+		#region Form Load and Closing
+		private void ClientForm_Load(object sender, EventArgs e)
 		{
-			// clear dictionary and data table
-			dictionary.Clear();
-			dataTable.Columns.Clear();
-			dataTable.Clear();
-
-			// add column names with associated lists to dictionary
-			dictionary.Add("Star Velocity", listVelocity);
-			dictionary.Add("Star Distance", listDistance);
-			dictionary.Add("Kelvin", listKelvin);
-			dictionary.Add("Event Horizon", listRadius);
-
-			// add data table columns using dictionary keys
-			foreach (var key in dictionary.Keys)
+			try
 			{
-				dataTable.Columns.Add(key);
+				Process process = new Process();
+				process.StartInfo.FileName = "ServerApp.exe";
+				process.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+				process.Start();
 			}
-
-			// count each list in the dictionary and return the max number of rows
-			int count = dictionary.Values.Max(list => list.Count);
-
-			// add the list associated with the dictionary key to the data table
-			for (int i = 0; i < count; i++)
+			// if the ServerApp.exe file is missing
+			catch (Win32Exception)
 			{
-				var row = dataTable.Rows.Add();
-
-				foreach (var key in dictionary.Keys)
-				{
-					try
-					{
-						row[key] = dictionary[key][i];
-					}
-					// if list associated with dictionary key is empty
-					catch
-					{
-						row[key] = null;
-					}
-				}
+				MessageBox.Show("Server could not be found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
+		}
 
-			// set data table as data source
-			DataGridViewOutput.DataSource = dataTable;
+		private void ClientForm_FormClosing(object sender, FormClosingEventArgs e)
+		{
+			// find the ServerApp.exe process
+			foreach (var process in Process.GetProcessesByName("ServerApp"))
+			{
+				// close the server
+				process.CloseMainWindow();
+			}
 		}
 		#endregion
 
-		#region Calculate Methods and Button
-		private void ButtonCalculate_Click(object sender, EventArgs e)
+		#region KeyPress and KeyUp
+		// press enter or return to go to next text box
+		private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
 		{
-			if (!string.IsNullOrEmpty(TextBoxInputWavelengthObserved.Text) && !string.IsNullOrEmpty(TextBoxInputWavelengthRest.Text))
+			// allow digits, decimals, negatives and backspaces
+			if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != '-' && !char.IsControl(e.KeyChar))
 			{
-				double observed = double.Parse(TextBoxInputWavelengthObserved.Text);
-				double rest = double.Parse(TextBoxInputWavelengthRest.Text);
-				StarVelocity(observed, rest);
+				e.Handled = true;
 			}
 
-			if (!string.IsNullOrEmpty(TextBoxInputParallax.Text))
+			// allow a single decimal
+			if (e.KeyChar == '.' && (sender as TextBox).Text.IndexOf('.') > -1)
 			{
-				double parallax = double.Parse(TextBoxInputParallax.Text);
-				StarDistance(parallax);
+				e.Handled = true;
 			}
 
-			if (!string.IsNullOrEmpty(TextBoxInputCelsius.Text))
+			// allow a single minus sign at the beginning
+			if (e.KeyChar == '-' && (sender as TextBox).Text.Length > 0)
 			{
-				double celsius = double.Parse(TextBoxInputCelsius.Text);
-				Kelvin(celsius);
-			}
-
-			if (!string.IsNullOrEmpty(TextBoxInputMass.Text))
-			{
-				double mass = double.Parse(TextBoxInputMass.Text) * Math.Pow(10, (double)NumericUpDownInputMass.Value);
-				EventHorizon(mass);
+				e.Handled = true;
 			}
 		}
 
-		private void StarVelocity(double observed, double rest)
+		private void TextBox_KeyUp(object sender, KeyEventArgs e)
+		{
+			if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
+			{
+				SelectNextControl((Control)sender, true, true, true, true);
+			}
+		}
+		#endregion
+
+		#region Channel Method
+		private IAstroContract CreateChannel()
 		{
 			// set base address
 			string address = "net.pipe://localhost/pipeformulas";
@@ -111,117 +87,172 @@ namespace ClientApp
 			EndpointAddress ep = new EndpointAddress(address);
 
 			// create a channel to the server
-			IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
+			return ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
+		}
+		#endregion
+
+		#region Calculate Methods
+		private double StarVelocity(double observed, double rest)
+		{
+			IAstroContract channel = CreateChannel();
 
 			// calculate star velocity
 			double velocity = channel.StarVelocity(observed, rest);
 
-			// round and add value to list as string
-			listVelocity.Add(Math.Round(velocity, 0).ToString());
-
-			DisplayDataTable();
+			// round and return value
+			return Math.Round(velocity, 0);
 		}
 
-		private void StarDistance(double parallax)
+		private double StarDistance(double parallax)
 		{
-			// set base address
-			string address = "net.pipe://localhost/pipeformulas";
-
-			// create NetNamedPipeBinding instance
-			NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-
-			// create EndpointAddress instance
-			EndpointAddress ep = new EndpointAddress(address);
-
-			// create a channel to the server
-			IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
+			IAstroContract channel = CreateChannel();
 
 			// calculate star distance
 			double distance = channel.StarDistance(parallax);
 
-			// round and add value to list as string
-			listDistance.Add(Math.Round(distance, 2).ToString());
-
-			DisplayDataTable();
+			// round and return value
+			return Math.Round(distance, 2);
 		}
 
-		private void Kelvin(double celsius)
+		private double Kelvin(double celsius)
 		{
-			// set base address
-			string address = "net.pipe://localhost/pipeformulas";
-
-			// create NetNamedPipeBinding instance
-			NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-
-			// create EndpointAddress instance
-			EndpointAddress ep = new EndpointAddress(address);
-
-			// create a channel to the server
-			IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
+			IAstroContract channel = CreateChannel();
 
 			// calculate Kelvin temperature
 			double kelvin = channel.Kelvin(celsius);
 
-			// add value to list as string
-			listKelvin.Add(kelvin.ToString());
-
-			DisplayDataTable();
+			// return value
+			return kelvin;
 		}
 
-		private void EventHorizon(double mass)
+		private double EventHorizon(double mass)
 		{
-			// set base address
-			string address = "net.pipe://localhost/pipeformulas";
-
-			// create NetNamedPipeBinding instance
-			NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.None);
-
-			// create EndpointAddress instance
-			EndpointAddress ep = new EndpointAddress(address);
-
-			// create a channel to the server
-			IAstroContract channel = ChannelFactory<IAstroContract>.CreateChannel(binding, ep);
+			IAstroContract channel = CreateChannel();
 
 			// calculate event horizon
 			double radius = channel.EventHorizon(mass);
 
-			// format and add value to list as string
-			listRadius.Add(radius.ToString("E1"));
-
-			DisplayDataTable();
+			// return value
+			return radius;
 		}
 		#endregion
 
-		#region Theme
-		private void ToolStripMenuItemLight_Click(object sender, EventArgs e)
+		#region Calculate Button
+		private void ButtonCalculate_Click(object sender, EventArgs e)
 		{
-			SetColor(default, default);
-			ButtonCalculate.BackColor = Color.White;
-		}
-
-		private void ToolStripMenuItemDark_Click(object sender, EventArgs e)
-		{
-			SetColor(Color.White, Color.Black);
-		}
-
-		private void ToolStripMenuItemForeColor_Click(object sender, EventArgs e)
-		{
-			if (colorDialog.ShowDialog() == DialogResult.OK)
+			try
 			{
-				var foreColor = colorDialog.Color;
+				// add a new row
+				int row = DataGridViewOutput.Rows.Add(1);
 
+				// clear auto selection of first cell of new row
+				DataGridViewOutput.ClearSelection();
+
+				// input name
+				if (!string.IsNullOrEmpty(TextBoxInputName.Text))
+				{
+					string name = TextBoxInputName.Text;
+					DataGridViewOutput[ColumnName.Index, row].Value = name;
+				}
+
+				// input observed wavelength and wavelength at rest
+				if (!string.IsNullOrEmpty(TextBoxInputWavelengthObserved.Text) && !string.IsNullOrEmpty(TextBoxInputWavelengthRest.Text))
+				{
+					double.TryParse(TextBoxInputWavelengthObserved.Text, out double observed);
+					double.TryParse(TextBoxInputWavelengthRest.Text, out double rest);
+
+					if (observed == 0 || rest == 0)
+					{
+						MessageBox.Show("Invalid wavelength input.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+					else
+					{
+						double velocity = StarVelocity(observed, rest);
+						DataGridViewOutput[ColumnStarVelocity.Index, row].Value = $"{velocity} m/s";
+					}
+				}
+
+				// input parallax angle
+				if (!string.IsNullOrEmpty(TextBoxInputParallax.Text))
+				{
+					double.TryParse(TextBoxInputParallax.Text, out double parallax);
+
+					if (parallax == 0)
+					{
+						MessageBox.Show("Invalid parallax angle input.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+					else
+					{
+						double distance = StarDistance(parallax);
+						DataGridViewOutput[ColumnStarDistance.Index, row].Value = $"{distance} pc";
+					}
+				}
+
+				// input temperature in degrees celsius
+				if (!string.IsNullOrEmpty(TextBoxInputCelsius.Text))
+				{
+					double.TryParse(TextBoxInputCelsius.Text, out double celsius);
+
+					if (celsius < -273.15)
+					{
+						MessageBox.Show("Invalid Celsius input.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+					else
+					{
+						double kelvin = Kelvin(celsius);
+						DataGridViewOutput[ColumnKelvin.Index, row].Value = $"{kelvin} K";
+					}
+				}
+
+				// input black hole mass
+				if (!string.IsNullOrEmpty(TextBoxInputMass.Text))
+				{
+					double.TryParse(TextBoxInputMass.Text, out double mass);
+
+					if (mass == 0)
+					{
+						MessageBox.Show("Invalid mass input.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
+					else
+					{
+						mass *= Math.Pow(10, (double)NumericUpDownInputMass.Value);
+						double radius = EventHorizon(mass);
+						DataGridViewOutput[ColumnEventHorizon.Index, row].Value = $"{radius:E1} m";
+					}
+				}
+
+				ToolStripStatusLabel.Text = "Success: Calculation complete.";
+			}
+			// the server is not running
+			catch (EndpointNotFoundException)
+			{
+				DataGridViewOutput.Rows.Clear();
+				MessageBox.Show("The server is not running.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
+		#endregion
+
+		#region Theme Get and Set
+		private void GetForeColor()
+		{
+			if (ColorDialog.ShowDialog() == DialogResult.OK)
+			{
+				var foreColor = ColorDialog.Color;
+
+				// set as the complementary colour
 				var backColor = Color.FromArgb(foreColor.ToArgb() ^ 0xffffff);
 
 				SetColor(foreColor, backColor);
 			}
 		}
 
-		private void ToolStripMenuItemBackColor_Click(object sender, EventArgs e)
+		private void GetBackColor()
 		{
-			if (colorDialog.ShowDialog() == DialogResult.OK)
+			if (ColorDialog.ShowDialog() == DialogResult.OK)
 			{
-				var backColor = colorDialog.Color;
+				var backColor = ColorDialog.Color;
 
+				// set as the complementary colour
 				var foreColor = Color.FromArgb(backColor.ToArgb() ^ 0xffffff);
 
 				SetColor(foreColor, backColor);
@@ -230,6 +261,7 @@ namespace ClientApp
 
 		private void SetColor(Color foreColor, Color backColor)
 		{
+			// if the ForeColor or BackColor is gray, shift the RGB values by 128
 			if (foreColor == Color.Gray)
 			{
 				foreColor = Color.FromArgb(Shift(foreColor.R), Shift(foreColor.G), Shift(foreColor.B));
@@ -239,36 +271,273 @@ namespace ClientApp
 				backColor = Color.FromArgb(Shift(backColor.R), Shift(backColor.G), Shift(backColor.B));
 			}
 
+			// set form BackColor
 			BackColor = backColor;
 
+			// set the ForeColor and BackColor of all controls
 			foreach (Control control in Controls)
 			{
 				control.ForeColor = foreColor;
 				control.BackColor = backColor;
+
+				// set the ForeColor and BackColor of the DataGridView
+				if (control is DataGridView)
+				{
+					DataGridView dataGridView = (DataGridView)control;
+
+					// if the ForeColor and BackColor is set to light mode, apply light mode colours
+					if (foreColor == default && backColor == default)
+					{
+						dataGridView.BackgroundColor = Color.DarkGray;
+						dataGridView.ColumnHeadersDefaultCellStyle.BackColor = Color.White;
+						dataGridView.RowsDefaultCellStyle.BackColor = Color.White;
+					}
+					else
+					{
+						dataGridView.BackgroundColor = backColor;
+						dataGridView.ColumnHeadersDefaultCellStyle.BackColor = backColor;
+						dataGridView.RowsDefaultCellStyle.BackColor = backColor;
+					}
+
+					dataGridView.ColumnHeadersDefaultCellStyle.ForeColor = foreColor;
+					dataGridView.RowsDefaultCellStyle.ForeColor = foreColor;
+					dataGridView.DefaultCellStyle.ForeColor = foreColor;
+					dataGridView.DefaultCellStyle.BackColor = backColor;
+				}
+
+				// if the ForeColor and BackColor is set to light mode, apply light mode colours
+				if (control is Button && foreColor == default && backColor == default)
+				{
+					control.BackColor = Color.White;
+				}
 			}
 		}
 
+		// shift the RGB parameter value by 128
 		private byte Shift(byte b)
 		{
-			return (byte)(b + 128); // b + 128 % 256 or b + 180 % 360
+			return (byte)(b + 128);
 		}
 		#endregion
 
-		#region Font
-		private void ToolStripMenuItemFont_Click(object sender, EventArgs e)
+		#region Font Get and Set
+		private void GetFont()
 		{
-			if (fontDialog.ShowDialog() == DialogResult.OK)
+			if (FontDialog.ShowDialog() == DialogResult.OK)
 			{
-				SetFont(fontDialog.Font);
+				SetFont(FontDialog.Font);
 			}
 		}
 
 		private void SetFont(Font font)
 		{
+			// set the font of all controls
 			foreach (Control control in Controls)
 			{
 				control.Font = font;
 			}
+		}
+		#endregion
+
+		#region Customisation ToolStripMenuItems
+		// French
+		private void ToolStripMenuItemFrench_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		// German
+		private void ToolStripMenuItemGerman_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		// English
+		private void ToolStripMenuItemEnglish_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		// light theme
+		private void ToolStripMenuItemLight_Click(object sender, EventArgs e)
+		{
+			SetColor(default, default);
+			ToolStripStatusLabel.Text = "Success: Light mode set.";
+		}
+
+		// dark theme
+		private void ToolStripMenuItemDark_Click(object sender, EventArgs e)
+		{
+			SetColor(Color.White, Color.Black);
+			ToolStripStatusLabel.Text = "Success: Dark mode set.";
+		}
+
+		// custom foreground colour
+		private void ToolStripMenuItemForeColor_Click(object sender, EventArgs e)
+		{
+			GetForeColor();
+			ToolStripStatusLabel.Text = "Success: Custom foreground colour set.";
+		}
+
+		// custom background colour
+		private void ToolStripMenuItemBackColor_Click(object sender, EventArgs e)
+		{
+			GetBackColor();
+			ToolStripStatusLabel.Text = "Success: Custom background colour set.";
+		}
+
+		// font
+		private void ToolStripMenuItemFont_Click(object sender, EventArgs e)
+		{
+			GetFont();
+			ToolStripStatusLabel.Text = "Success: Custom font set.";
+		}
+		#endregion
+
+		#region Customisation Buttons
+		// show or hide language buttons
+		private void ButtonLanguage_Click(object sender, EventArgs e)
+		{
+			if (!ButtonFrench.Visible && !ButtonGerman.Visible && !ButtonEnglish.Visible)
+			{
+				ButtonFrench.Visible = true;
+				ButtonGerman.Visible = true;
+				ButtonEnglish.Visible = true;
+			}
+			else
+			{
+				ButtonFrench.Visible = false;
+				ButtonGerman.Visible = false;
+				ButtonEnglish.Visible = false;
+			}
+		}
+
+		// French
+		private void ButtonFrench_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		// German
+		private void ButtonGerman_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		// English
+		private void ButtonEnglish_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		// show or hide theme buttons
+		private void ButtonTheme_Click(object sender, EventArgs e)
+		{
+			if (!ButtonLight.Visible && !ButtonDark.Visible && !ButtonCustom.Visible)
+			{
+				// if ButtonTheme is shown without hiding ButtonLanguage first
+				if (ButtonFrench.Visible && ButtonGerman.Visible && ButtonEnglish.Visible)
+				{
+					ButtonLanguage_Click(sender, e);
+				}
+
+				ButtonLight.Visible = true;
+				ButtonDark.Visible = true;
+				ButtonCustom.Visible = true;
+				ButtonLanguage.Visible = false;
+			}
+			else
+			{
+				// if ButtonTheme is hidden without hiding ButtonCustom first
+				if (ButtonForeground.Visible && ButtonBackground.Visible)
+				{
+					ButtonCustom_Click(sender, e);
+				}
+
+				ButtonLight.Visible = false;
+				ButtonDark.Visible = false;
+				ButtonCustom.Visible = false;
+				ButtonLanguage.Visible = true;
+			}
+		}
+
+		// light theme
+		private void ButtonLight_Click(object sender, EventArgs e)
+		{
+			SetColor(default, default);
+			ToolStripStatusLabel.Text = "Success: Light mode set.";
+		}
+
+		// dark theme
+		private void ButtonDark_Click(object sender, EventArgs e)
+		{
+			SetColor(Color.White, Color.Black);
+			ToolStripStatusLabel.Text = "Success: Dark mode set.";
+		}
+
+		// show or hide custom colour buttons
+		private void ButtonCustom_Click(object sender, EventArgs e)
+		{
+			if (!ButtonForeground.Visible && !ButtonBackground.Visible)
+			{
+				ButtonForeground.Visible = true;
+				ButtonBackground.Visible = true;
+			}
+			else
+			{
+				ButtonForeground.Visible = false;
+				ButtonBackground.Visible = false;
+			}
+		}
+
+		// custom foreground colour
+		private void ButtonForeground_Click(object sender, EventArgs e)
+		{
+			GetForeColor();
+			ToolStripStatusLabel.Text = "Success: Custom foreground colour set.";
+		}
+
+		// custom background colour
+		private void ButtonBackground_Click(object sender, EventArgs e)
+		{
+			GetBackColor();
+			ToolStripStatusLabel.Text = "Success: Custom background colour set.";
+		}
+
+		// show or hide style button
+		private void ButtonStyle_Click(object sender, EventArgs e)
+		{
+			if (!ButtonFont.Visible)
+			{
+				// if ButtonFont is shown without hiding ButtonTheme first
+				if (ButtonLight.Visible && ButtonDark.Visible && ButtonCustom.Visible)
+				{
+					ButtonTheme_Click(sender, e);
+				}
+
+				// if ButtonFont is shown without hiding ButtonLanguage first
+				if (ButtonFrench.Visible && ButtonGerman.Visible && ButtonEnglish.Visible)
+				{
+					ButtonLanguage_Click(sender, e);
+				}
+
+				ButtonFont.Visible = true;
+				ButtonTheme.Visible = false;
+				ButtonLanguage.Visible = false;
+			}
+			else
+			{
+				ButtonFont.Visible = false;
+				ButtonTheme.Visible = true;
+				ButtonLanguage.Visible = true;
+			}
+		}
+
+		//font 
+		private void ButtonFont_Click(object sender, EventArgs e)
+		{
+			GetFont();
+			ToolStripStatusLabel.Text = "Success: Custom font set.";
 		}
 		#endregion
 	}
