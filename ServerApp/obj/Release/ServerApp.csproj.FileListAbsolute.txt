@@ -3,6 +3,7 @@ C:\- Obi\OneDrive\Code\VS\MSSSApp\ServerApp\bin\Release\ServerApp.exe
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ServerApp\bin\Release\ServerApp.pdb
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ServerApp\bin\Release\AstroMath.dll
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ServerApp\bin\Release\AstroMath.pdb
+C:\- Obi\OneDrive\Code\VS\MSSSApp\ServerApp\bin\Release\AstroMath.xml
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ServerApp\obj\Release\ServerApp.csproj.AssemblyReference.cache
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ServerApp\obj\Release\ServerApp.csproj.CoreCompileInputs.cache
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ServerApp\obj\Release\ServerApp.csproj.Up2Date

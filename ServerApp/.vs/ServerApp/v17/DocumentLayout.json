@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ServerApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ServerApp\\serverprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ServerApp\\astroserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|solutionrelative:astroserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|c:\\- obi\\onedrive\\code\\vs\\msssapp\\serverapp\\serverprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|solutionrelative:serverprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|c:\\- obi\\onedrive\\code\\vs\\msssapp\\serverapp\\iastrocontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ServerApp\\iastrocontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|solutionrelative:iastrocontract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ServerApp\\astroserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{990BE63E-8C1F-4542-AAD3-95B8D03C4E0A}|ServerApp.csproj|solutionrelative:astroserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IAstroContract.cs",
               "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ServerApp\\IAstroContract.cs",
               "RelativeDocumentMoniker": "IAstroContract.cs",
@@ -46,12 +46,11 @@
               "RelativeToolTip": "IAstroContract.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T08:55:54.925Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T08:55:54.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "AstroServer.cs",
               "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ServerApp\\AstroServer.cs",
               "RelativeDocumentMoniker": "AstroServer.cs",
@@ -59,11 +58,12 @@
               "RelativeToolTip": "AstroServer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T08:56:41.342Z"
+              "WhenOpened": "2024-04-12T08:56:41.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ServerProgram.cs",
               "DocumentMoniker": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ServerApp\\ServerProgram.cs",
               "RelativeDocumentMoniker": "ServerProgram.cs",

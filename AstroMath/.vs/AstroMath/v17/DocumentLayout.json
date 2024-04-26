@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\AstroMath\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66BF1371-9B65-4A21-A857-A8A1D4A2A0B3}|AstroMath.csproj|c:\\- obi\\onedrive\\code\\vs\\msssapp\\astromath\\formulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{66BF1371-9B65-4A21-A857-A8A1D4A2A0B3}|AstroMath.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\AstroMath\\formulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66BF1371-9B65-4A21-A857-A8A1D4A2A0B3}|AstroMath.csproj|solutionrelative:formulas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -25,10 +25,6 @@
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Formulas.cs",
@@ -36,7 +32,7 @@
               "RelativeDocumentMoniker": "Formulas.cs",
               "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\AstroMath\\Formulas.cs",
               "RelativeToolTip": "Formulas.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAAUwCUAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-12T04:36:43.667Z",
               "EditorCaption": ""
