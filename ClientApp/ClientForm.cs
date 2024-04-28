@@ -1,8 +1,11 @@
-﻿using System;
+﻿using ClientApp.Properties;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Drawing;
+using System.Globalization;
 using System.ServiceModel;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace ClientApp
@@ -27,7 +30,7 @@ namespace ClientApp
 			// if the ServerApp.exe file is missing
 			catch (Win32Exception)
 			{
-				MessageBox.Show("Server could not be found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show(strings.ServerMissing, strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 		}
 
@@ -43,7 +46,6 @@ namespace ClientApp
 		#endregion
 
 		#region KeyPress and KeyUp
-		// press enter or return to go to next text box
 		private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
 		{
 			// allow digits, decimals, negatives and backspaces
@@ -65,6 +67,7 @@ namespace ClientApp
 			}
 		}
 
+		// press enter or return to go to next text box
 		private void TextBox_KeyUp(object sender, KeyEventArgs e)
 		{
 			if (e.KeyCode == Keys.Enter || e.KeyCode == Keys.Return)
@@ -163,7 +166,7 @@ namespace ClientApp
 
 					if (observed == 0 || rest == 0)
 					{
-						MessageBox.Show("Invalid wavelength input.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						MessageBox.Show(strings.InvalidWavelength, strings.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 					}
 					else
 					{
@@ -179,7 +182,7 @@ namespace ClientApp
 
 					if (parallax == 0)
 					{
-						MessageBox.Show("Invalid parallax angle input.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						MessageBox.Show(strings.InvalidParallax, strings.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 					}
 					else
 					{
@@ -195,7 +198,7 @@ namespace ClientApp
 
 					if (celsius < -273.15)
 					{
-						MessageBox.Show("Invalid Celsius input.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						MessageBox.Show(strings.InvalidCelsius, strings.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 					}
 					else
 					{
@@ -211,7 +214,7 @@ namespace ClientApp
 
 					if (mass == 0)
 					{
-						MessageBox.Show("Invalid mass input.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+						MessageBox.Show(strings.InvalidMass, strings.Warning, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 					}
 					else
 					{
@@ -220,14 +223,59 @@ namespace ClientApp
 						DataGridViewOutput[ColumnEventHorizon.Index, row].Value = $"{radius:E1} m";
 					}
 				}
-
-				ToolStripStatusLabel.Text = "Success: Calculation complete.";
 			}
 			// the server is not running
 			catch (EndpointNotFoundException)
 			{
 				DataGridViewOutput.Rows.Clear();
-				MessageBox.Show("The server is not running.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				MessageBox.Show(strings.ServerNotRunning, strings.Error, MessageBoxButtons.OK, MessageBoxIcon.Error);
+			}
+		}
+		#endregion
+
+		#region Language Set
+		private void SetLanguage(string language)
+		{
+			Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
+			ComponentResourceManager manager = new ComponentResourceManager(typeof(ClientForm));
+
+			// apply resources to form
+			manager.ApplyResources(this, "$this");
+
+			foreach (Control control in Controls)
+			{
+				// apply resources to all controls
+				manager.ApplyResources(control, control.Name);
+
+				if (control is DataGridView dataGridView)
+				{
+					// apply resources to DataGridView columns
+					foreach (DataGridViewColumn column in dataGridView.Columns)
+					{
+						manager.ApplyResources(column, column.Name);
+					}
+				}
+
+				if (control is MenuStrip)
+				{
+					// apply resources to tool strip items
+					foreach (ToolStripItem toolStripItem in MenuStrip.Items)
+					{
+						manager.ApplyResources(toolStripItem, toolStripItem.Name);
+
+						// apply resources to drop down items
+						foreach (ToolStripDropDownItem dropDownItem in ((ToolStripDropDownItem)toolStripItem).DropDownItems)
+						{
+							manager.ApplyResources(dropDownItem, dropDownItem.Name);
+
+							// apply resources to sub drop down items
+							foreach (ToolStripDropDownItem subDropDownItem in dropDownItem.DropDownItems)
+							{
+								manager.ApplyResources(subDropDownItem, subDropDownItem.Name);
+							}
+						}
+					}
+				}
 			}
 		}
 		#endregion
@@ -281,10 +329,8 @@ namespace ClientApp
 				control.BackColor = backColor;
 
 				// set the ForeColor and BackColor of the DataGridView
-				if (control is DataGridView)
+				if (control is DataGridView dataGridView)
 				{
-					DataGridView dataGridView = (DataGridView)control;
-
 					// if the ForeColor and BackColor is set to light mode, apply light mode colours
 					if (foreColor == default && backColor == default)
 					{
@@ -343,54 +389,49 @@ namespace ClientApp
 		// French
 		private void ToolStripMenuItemFrench_Click(object sender, EventArgs e)
 		{
-
+			SetLanguage("fr-FR");
 		}
 
 		// German
 		private void ToolStripMenuItemGerman_Click(object sender, EventArgs e)
 		{
-
+			SetLanguage("de-DE");
 		}
 
 		// English
 		private void ToolStripMenuItemEnglish_Click(object sender, EventArgs e)
 		{
-
+			SetLanguage("en-GB");
 		}
 
 		// light theme
 		private void ToolStripMenuItemLight_Click(object sender, EventArgs e)
 		{
 			SetColor(default, default);
-			ToolStripStatusLabel.Text = "Success: Light mode set.";
 		}
 
 		// dark theme
 		private void ToolStripMenuItemDark_Click(object sender, EventArgs e)
 		{
 			SetColor(Color.White, Color.Black);
-			ToolStripStatusLabel.Text = "Success: Dark mode set.";
 		}
 
 		// custom foreground colour
 		private void ToolStripMenuItemForeColor_Click(object sender, EventArgs e)
 		{
 			GetForeColor();
-			ToolStripStatusLabel.Text = "Success: Custom foreground colour set.";
 		}
 
 		// custom background colour
 		private void ToolStripMenuItemBackColor_Click(object sender, EventArgs e)
 		{
 			GetBackColor();
-			ToolStripStatusLabel.Text = "Success: Custom background colour set.";
 		}
 
 		// font
 		private void ToolStripMenuItemFont_Click(object sender, EventArgs e)
 		{
 			GetFont();
-			ToolStripStatusLabel.Text = "Success: Custom font set.";
 		}
 		#endregion
 
@@ -400,6 +441,18 @@ namespace ClientApp
 		{
 			if (!ButtonFrench.Visible && !ButtonGerman.Visible && !ButtonEnglish.Visible)
 			{
+				// if ButtonFont is open without closing ButtonTheme first
+				if (ButtonLight.Visible && ButtonDark.Visible && ButtonCustom.Visible)
+				{
+					ButtonTheme_Click(sender, e);
+				}
+
+				// if ButtonTheme is open without closing ButtonStyle first
+				if (ButtonFont.Visible)
+				{
+					ButtonStyle_Click(sender, e);
+				}
+
 				ButtonFrench.Visible = true;
 				ButtonGerman.Visible = true;
 				ButtonEnglish.Visible = true;
@@ -415,19 +468,19 @@ namespace ClientApp
 		// French
 		private void ButtonFrench_Click(object sender, EventArgs e)
 		{
-
+			SetLanguage("fr-FR");
 		}
 
 		// German
 		private void ButtonGerman_Click(object sender, EventArgs e)
 		{
-
+			SetLanguage("de-DE");
 		}
 
 		// English
 		private void ButtonEnglish_Click(object sender, EventArgs e)
 		{
-
+			SetLanguage("en-GB");
 		}
 
 		// show or hide theme buttons
@@ -435,20 +488,25 @@ namespace ClientApp
 		{
 			if (!ButtonLight.Visible && !ButtonDark.Visible && !ButtonCustom.Visible)
 			{
-				// if ButtonTheme is shown without hiding ButtonLanguage first
-				if (ButtonFrench.Visible && ButtonGerman.Visible && ButtonEnglish.Visible)
+				// if ButtonTheme is open without closing ButtonStyle first
+				if (ButtonFont.Visible)
 				{
-					ButtonLanguage_Click(sender, e);
+					ButtonStyle_Click(sender, e);
 				}
 
 				ButtonLight.Visible = true;
 				ButtonDark.Visible = true;
 				ButtonCustom.Visible = true;
-				ButtonLanguage.Visible = false;
 			}
 			else
 			{
-				// if ButtonTheme is hidden without hiding ButtonCustom first
+				// if ButtonTheme is open without closing ButtonFont first
+				if (ButtonFont.Visible)
+				{
+					ButtonStyle_Click(sender, e);
+				}
+
+				// if ButtonTheme is closed without closing ButtonCustom first
 				if (ButtonForeground.Visible && ButtonBackground.Visible)
 				{
 					ButtonCustom_Click(sender, e);
@@ -457,7 +515,6 @@ namespace ClientApp
 				ButtonLight.Visible = false;
 				ButtonDark.Visible = false;
 				ButtonCustom.Visible = false;
-				ButtonLanguage.Visible = true;
 			}
 		}
 
@@ -465,14 +522,12 @@ namespace ClientApp
 		private void ButtonLight_Click(object sender, EventArgs e)
 		{
 			SetColor(default, default);
-			ToolStripStatusLabel.Text = "Success: Light mode set.";
 		}
 
 		// dark theme
 		private void ButtonDark_Click(object sender, EventArgs e)
 		{
 			SetColor(Color.White, Color.Black);
-			ToolStripStatusLabel.Text = "Success: Dark mode set.";
 		}
 
 		// show or hide custom colour buttons
@@ -494,14 +549,12 @@ namespace ClientApp
 		private void ButtonForeground_Click(object sender, EventArgs e)
 		{
 			GetForeColor();
-			ToolStripStatusLabel.Text = "Success: Custom foreground colour set.";
 		}
 
 		// custom background colour
 		private void ButtonBackground_Click(object sender, EventArgs e)
 		{
 			GetBackColor();
-			ToolStripStatusLabel.Text = "Success: Custom background colour set.";
 		}
 
 		// show or hide style button
@@ -509,27 +562,11 @@ namespace ClientApp
 		{
 			if (!ButtonFont.Visible)
 			{
-				// if ButtonFont is shown without hiding ButtonTheme first
-				if (ButtonLight.Visible && ButtonDark.Visible && ButtonCustom.Visible)
-				{
-					ButtonTheme_Click(sender, e);
-				}
-
-				// if ButtonFont is shown without hiding ButtonLanguage first
-				if (ButtonFrench.Visible && ButtonGerman.Visible && ButtonEnglish.Visible)
-				{
-					ButtonLanguage_Click(sender, e);
-				}
-
 				ButtonFont.Visible = true;
-				ButtonTheme.Visible = false;
-				ButtonLanguage.Visible = false;
 			}
 			else
 			{
 				ButtonFont.Visible = false;
-				ButtonTheme.Visible = true;
-				ButtonLanguage.Visible = true;
 			}
 		}
 
@@ -537,7 +574,6 @@ namespace ClientApp
 		private void ButtonFont_Click(object sender, EventArgs e)
 		{
 			GetFont();
-			ToolStripStatusLabel.Text = "Success: Custom font set.";
 		}
 		#endregion
 	}
