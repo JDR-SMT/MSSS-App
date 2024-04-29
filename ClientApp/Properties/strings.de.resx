@@ -121,10 +121,10 @@
     <value>Fehler</value>
   </data>
   <data name="InvalidCelsius" xml:space="preserve">
-    <value>Ungültige Celsius-Eingabe.</value>
+    <value>Ungültige Celsius-Temperatureingabe.</value>
   </data>
   <data name="InvalidMass" xml:space="preserve">
-    <value>Ungültige Masseneingabe.</value>
+    <value>Ungültige Eingabe der Masse des Schwarzen Lochs.</value>
   </data>
   <data name="InvalidParallax" xml:space="preserve">
     <value>Ungültige Parallaxenwinkeleingabe.</value>

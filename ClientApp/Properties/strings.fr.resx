@@ -121,10 +121,10 @@
     <value>Erreur</value>
   </data>
   <data name="InvalidCelsius" xml:space="preserve">
-    <value>Entrée Celsius non valide.</value>
+    <value>Entrée de température Celsius non valide.</value>
   </data>
   <data name="InvalidMass" xml:space="preserve">
-    <value>Entrée de masse non valide.</value>
+    <value>Entrée de la masse du trou noir non valide.</value>
   </data>
   <data name="InvalidParallax" xml:space="preserve">
     <value>Entrée d'angle de parallaxe non valide.</value>

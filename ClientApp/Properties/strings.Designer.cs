@@ -70,7 +70,7 @@ namespace ClientApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid Celsius input..
+        ///   Looks up a localized string similar to Invalid Celsius temperature input..
         /// </summary>
         internal static string InvalidCelsius {
             get {
@@ -79,7 +79,7 @@ namespace ClientApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Invalid mass input..
+        ///   Looks up a localized string similar to Invalid black hole mass input..
         /// </summary>
         internal static string InvalidMass {
             get {

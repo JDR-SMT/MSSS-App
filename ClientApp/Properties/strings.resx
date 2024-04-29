@@ -121,10 +121,10 @@
     <value>Error</value>
   </data>
   <data name="InvalidCelsius" xml:space="preserve">
-    <value>Invalid Celsius input.</value>
+    <value>Invalid Celsius temperature input.</value>
   </data>
   <data name="InvalidMass" xml:space="preserve">
-    <value>Invalid mass input.</value>
+    <value>Invalid black hole mass input.</value>
   </data>
   <data name="InvalidParallax" xml:space="preserve">
     <value>Invalid parallax angle input.</value>
