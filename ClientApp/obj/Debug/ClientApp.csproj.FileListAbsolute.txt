@@ -22,7 +22,5 @@ C:\- Obi\OneDrive\Code\VS\MSSSApp\ClientApp\bin\Debug\de\ClientApp.resources.dll
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ClientApp\obj\Debug\ClientApp.Properties.strings.de.resources
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ClientApp\obj\Debug\de\ClientApp.resources.dll
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ClientApp\bin\Debug\fr\ClientApp.resources.dll
-C:\- Obi\OneDrive\Code\VS\MSSSApp\ClientApp\obj\Debug\ClientApp.Properties.test.resources
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ClientApp\obj\Debug\ClientApp.Properties.strings.fr.resources
 C:\- Obi\OneDrive\Code\VS\MSSSApp\ClientApp\obj\Debug\fr\ClientApp.resources.dll
-C:\- Obi\OneDrive\Code\VS\MSSSApp\ClientApp\obj\Debug\ClientApp.Properties.strings.en.resources

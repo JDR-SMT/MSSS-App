@@ -509,10 +509,10 @@
     <value>Parallaxenwinkel</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 20</value>
+    <value>195, 20</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>STERNENABSTAND</value>
+    <value>STERNENTFERNUNG</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 16</value>
@@ -521,7 +521,7 @@
     <value>Temperatur</value>
   </data>
   <data name="ButtonCalculate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 610</value>
+    <value>170, 610</value>
   </data>
   <data name="ButtonCalculate.Text" xml:space="preserve">
     <value>Berechnen</value>

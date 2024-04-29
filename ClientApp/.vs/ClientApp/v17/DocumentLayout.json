@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|c:\\- obi\\onedrive\\code\\vs\\msssapp\\clientapp\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A931F6E9-2F47-4031-9E88-A6863081B14A}|ClientApp.csproj|solutionrelative:clientform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "ClientForm.cs",
               "ToolTip": "C:\\- Obi\\OneDrive\\Code\\VS\\MSSSApp\\ClientApp\\ClientForm.cs",
               "RelativeToolTip": "ClientForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG4BAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T12:27:56.138Z",
               "EditorCaption": ""

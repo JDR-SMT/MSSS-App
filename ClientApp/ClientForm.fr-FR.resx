@@ -128,7 +128,7 @@
     <value>Thème</value>
   </data>
   <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1282, 28</value>
+    <value>1252, 28</value>
   </data>
   <data name="ToolStripMenuItemFrench.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -457,17 +457,17 @@
     <value>Nom</value>
   </data>
   <data name="ColumnStarVelocity.HeaderText" xml:space="preserve">
-    <value>Vitesse des étoiles</value>
+    <value>Vélocité des étoile</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ColumnStarVelocity.Width" type="System.Int32, mscorlib">
-    <value>150</value>
+    <value>147</value>
   </data>
   <data name="ColumnStarDistance.HeaderText" xml:space="preserve">
-    <value>Distance entre les étoiles</value>
+    <value>Distance des étoile</value>
   </data>
   <data name="ColumnStarDistance.Width" type="System.Int32, mscorlib">
-    <value>186</value>
+    <value>151</value>
   </data>
   <data name="ColumnEventHorizon.HeaderText" xml:space="preserve">
     <value>Horizon des événements</value>
@@ -476,19 +476,19 @@
     <value>185</value>
   </data>
   <data name="DataGridViewOutput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>300, 50</value>
+    <value>280, 50</value>
   </data>
   <data name="DataGridViewOutput.Size" type="System.Drawing.Size, System.Drawing">
-    <value>790, 590</value>
+    <value>770, 590</value>
   </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9pt, style=Bold</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 18</value>
+    <value>190, 18</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>VÉLOCITÉ DES ÉTOILES</value>
+    <value>VÉLOCITÉ DES ÉTOILE</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>169, 16</value>
@@ -516,10 +516,10 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 18</value>
+    <value>192, 18</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>DISTANCE ENTRE LES ÉTOILES</value>
+    <value>DISTANCE DES ÉTOILE</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>Température</value>
@@ -531,7 +531,7 @@
     <value>65, 18</value>
   </data>
   <data name="ButtonCalculate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>190, 610</value>
+    <value>170, 610</value>
   </data>
   <data name="ButtonCalculate.Text" xml:space="preserve">
     <value>Calculer</value>
@@ -552,7 +552,7 @@
     <value>HORIZON DES ÉVÉNEMENTS</value>
   </data>
   <data name="ButtonLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 50</value>
+    <value>1070, 50</value>
   </data>
   <data name="ButtonLanguage.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -561,7 +561,7 @@
     <value>Langue</value>
   </data>
   <data name="ButtonTheme.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 90</value>
+    <value>1070, 90</value>
   </data>
   <data name="ButtonTheme.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -570,7 +570,7 @@
     <value>Thème</value>
   </data>
   <data name="ButtonStyle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 130</value>
+    <value>1070, 130</value>
   </data>
   <data name="ButtonStyle.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -584,7 +584,7 @@
 </value>
   </data>
   <data name="ButtonFrench.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 170</value>
+    <value>1070, 170</value>
   </data>
   <data name="ButtonFrench.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -601,7 +601,7 @@
 </value>
   </data>
   <data name="ButtonGerman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 130</value>
+    <value>1070, 130</value>
   </data>
   <data name="ButtonGerman.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -623,7 +623,7 @@
 </value>
   </data>
   <data name="ButtonEnglish.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 90</value>
+    <value>1070, 90</value>
   </data>
   <data name="ButtonEnglish.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -643,7 +643,7 @@
 </value>
   </data>
   <data name="ButtonLight.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 130</value>
+    <value>1070, 130</value>
   </data>
   <data name="ButtonLight.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -663,7 +663,7 @@
 </value>
   </data>
   <data name="ButtonDark.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 170</value>
+    <value>1070, 170</value>
   </data>
   <data name="ButtonDark.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -691,7 +691,7 @@
 </value>
   </data>
   <data name="ButtonCustom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 210</value>
+    <value>1070, 210</value>
   </data>
   <data name="ButtonCustom.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 30</value>
@@ -715,7 +715,7 @@
 </value>
   </data>
   <data name="ButtonForeground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 250</value>
+    <value>1070, 250</value>
   </data>
   <data name="ButtonForeground.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 30</value>
@@ -738,7 +738,7 @@
 </value>
   </data>
   <data name="ButtonBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 290</value>
+    <value>1070, 290</value>
   </data>
   <data name="ButtonBackground.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -758,7 +758,7 @@
 </value>
   </data>
   <data name="ButtonFont.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 170</value>
+    <value>1070, 170</value>
   </data>
   <data name="ButtonFont.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 30</value>
@@ -785,25 +785,25 @@
     <value>NOM</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 540</value>
+    <value>1070, 540</value>
   </data>
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 600</value>
+    <value>1070, 600</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 560</value>
+    <value>1070, 560</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 480</value>
+    <value>1070, 480</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1150, 540</value>
+    <value>1110, 540</value>
   </data>
   <data name="label22.Text" xml:space="preserve">
     <value>Nanomètre</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1150, 600</value>
+    <value>1110, 600</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 16</value>
@@ -812,10 +812,10 @@
     <value>Seconde d'arc</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1150, 560</value>
+    <value>1110, 560</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1150, 480</value>
+    <value>1110, 480</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 16</value>
@@ -824,28 +824,28 @@
     <value>Kilogramme</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 520</value>
+    <value>1070, 520</value>
   </data>
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 620</value>
+    <value>1070, 620</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 500</value>
+    <value>1070, 500</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1110, 580</value>
+    <value>1070, 580</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1150, 500</value>
+    <value>1110, 500</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
     <value>Mètre</value>
   </data>
   <data name="label31.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1150, 580</value>
+    <value>1110, 580</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1150, 620</value>
+    <value>1110, 620</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 16</value>
@@ -854,7 +854,7 @@
     <value>Parallaxe seconde</value>
   </data>
   <data name="label33.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1150, 520</value>
+    <value>1110, 520</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 16</value>
@@ -863,7 +863,7 @@
     <value>Mètre par seconde</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1282, 662</value>
+    <value>1252, 662</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1153,6 +1153,6 @@
 </value>
   </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1300, 709</value>
+    <value>1270, 709</value>
   </data>
 </root>

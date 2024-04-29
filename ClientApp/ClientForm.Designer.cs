@@ -717,11 +717,6 @@
 		private System.Windows.Forms.Label label15;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Label label17;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStarVelocity;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStarDistance;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnKelvin;
-		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEventHorizon;
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.Label label19;
 		private System.Windows.Forms.Label label20;
@@ -738,6 +733,11 @@
 		private System.Windows.Forms.Label label31;
 		private System.Windows.Forms.Label label32;
 		private System.Windows.Forms.Label label33;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStarVelocity;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnStarDistance;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnKelvin;
+		private System.Windows.Forms.DataGridViewTextBoxColumn ColumnEventHorizon;
 	}
 }
 

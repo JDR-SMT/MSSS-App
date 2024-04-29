@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label33.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
@@ -128,7 +132,6 @@
   <data name="label8.Text" xml:space="preserve">
     <value>Black Hole Mass</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 510</value>
   </data>
@@ -141,11 +144,11 @@
   <data name="&gt;&gt;ButtonStyle.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
+  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;ButtonLight.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ToolStripMenuItemCustom.Text" xml:space="preserve">
-    <value>Custom</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
@@ -153,14 +156,14 @@
   <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
-  <data name="&gt;&gt;ColumnName.Name" xml:space="preserve">
-    <value>ColumnName</value>
+  <data name="TextBoxInputWavelengthObserved.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 22</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
   </data>
-  <data name="&gt;&gt;ToolStripMenuItemDark.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label20.Text" xml:space="preserve">
+    <value>°C</value>
   </data>
   <data name="ButtonStyle.Location" type="System.Drawing.Point, System.Drawing">
     <value>900, 130</value>
@@ -179,9 +182,6 @@
   </data>
   <data name="label23.Text" xml:space="preserve">
     <value>Arcsec</value>
-  </data>
-  <data name="TextBoxInputParallax.Text" xml:space="preserve">
-    <value>0.547</value>
   </data>
   <data name="ButtonLanguage.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -221,6 +221,9 @@
   <data name="&gt;&gt;label18.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="ButtonGerman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 30</value>
+  </data>
   <data name="TextBoxInputWavelengthRest.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -229,6 +232,12 @@
   </data>
   <data name="NumericUpDownInputMass.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
+  </data>
+  <data name="&gt;&gt;ButtonLanguage.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;ButtonForeground.Name" xml:space="preserve">
+    <value>ButtonForeground</value>
   </data>
   <data name="ToolStripMenuItemCustom.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 26</value>
@@ -239,11 +248,11 @@
   <data name="ButtonLight.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;label27.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 16</value>
   </data>
-  <data name="label21.Text" xml:space="preserve">
-    <value>kg</value>
+  <data name="&gt;&gt;TextBoxInputParallax.ZOrder" xml:space="preserve">
+    <value>45</value>
   </data>
   <data name="ButtonStyle.Text" xml:space="preserve">
     <value>Style</value>
@@ -251,11 +260,17 @@
   <data name="ButtonFrench.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
   <data name="label19.Text" xml:space="preserve">
     <value>"</value>
   </data>
   <data name="&gt;&gt;ToolStripMenuItemStyle.Name" xml:space="preserve">
     <value>ToolStripMenuItemStyle</value>
+  </data>
+  <data name="ButtonFont.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;label24.Name" xml:space="preserve">
     <value>label24</value>
@@ -263,8 +278,14 @@
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
+  <data name="ToolStripMenuItemStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 24</value>
+  </data>
   <data name="ButtonGerman.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="ToolStripMenuItemFont.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -301,6 +322,9 @@
   <data name="&gt;&gt;ToolStripMenuItemFrench.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -313,11 +337,11 @@
   <data name="&gt;&gt;label17.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;ButtonGerman.Type" xml:space="preserve">
+  <data name="&gt;&gt;ButtonBackground.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ButtonGerman.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;ButtonGerman.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ButtonStyle.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -331,8 +355,8 @@
   <data name="ButtonTheme.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 30</value>
   </data>
-  <data name="ButtonDark.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="&gt;&gt;TextBoxInputCelsius.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonDark.ZOrder" xml:space="preserve">
     <value>33</value>
@@ -355,11 +379,8 @@
   <data name="label20.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label25.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="&gt;&gt;ToolStripMenuItemStyle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ButtonBackground.Location" type="System.Drawing.Point, System.Drawing">
+    <value>900, 290</value>
   </data>
   <data name="&gt;&gt;label25.Name" xml:space="preserve">
     <value>label25</value>
@@ -369,9 +390,6 @@
   </data>
   <data name="&gt;&gt;label28.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
   </data>
   <data name="label30.Location" type="System.Drawing.Point, System.Drawing">
     <value>940, 500</value>
@@ -394,8 +412,8 @@
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ButtonTheme.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="ButtonForeground.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -406,8 +424,8 @@
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
   </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="ToolStripMenuItemForeColor.Text" xml:space="preserve">
+    <value>Foreground Colour</value>
   </data>
   <data name="ColumnStarVelocity.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -427,17 +445,14 @@
   <data name="&gt;&gt;MenuStrip.ZOrder" xml:space="preserve">
     <value>52</value>
   </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>nm</value>
+  <data name="&gt;&gt;ButtonCustom.ZOrder" xml:space="preserve">
+    <value>32</value>
   </data>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
   <data name="&gt;&gt;ButtonEnglish.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label30.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="TextBoxInputMass.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -516,11 +531,14 @@
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
-  <data name="&gt;&gt;ButtonStyle.Name" xml:space="preserve">
-    <value>ButtonStyle</value>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>46</value>
   </data>
   <data name="ButtonEnglish.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -528,8 +546,8 @@
   <data name="&gt;&gt;label30.Name" xml:space="preserve">
     <value>label30</value>
   </data>
-  <data name="&gt;&gt;ButtonCustom.ZOrder" xml:space="preserve">
-    <value>32</value>
+  <data name="label21.Text" xml:space="preserve">
+    <value>kg</value>
   </data>
   <data name="ButtonBackground.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -545,14 +563,14 @@
         XkZ3YTgrxeny6YMN284fbd6anuh4BVlOUowflJGQAAMDAFR8p7hAHjwPAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="label27.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
   <data name="ButtonTheme.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>49</value>
+  </data>
+  <data name="ButtonGerman.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
     <value>900, 540</value>
@@ -563,8 +581,8 @@
   <data name="&gt;&gt;NumericUpDownInputMass.Name" xml:space="preserve">
     <value>NumericUpDownInputMass</value>
   </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>°C</value>
+  <data name="&gt;&gt;ColumnName.Name" xml:space="preserve">
+    <value>ColumnName</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -608,17 +626,20 @@
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
     <value>940, 600</value>
   </data>
-  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>18, 16</value>
+  <data name="DataGridViewOutput.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 50</value>
   </data>
   <data name="ButtonFont.Location" type="System.Drawing.Point, System.Drawing">
     <value>900, 170</value>
   </data>
-  <data name="ButtonLight.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;ButtonCalculate.Name" xml:space="preserve">
     <value>ButtonCalculate</value>
+  </data>
+  <data name="&gt;&gt;ButtonBackground.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label29.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -629,11 +650,17 @@
   <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="ToolStripMenuItemLight.Text" xml:space="preserve">
-    <value>Light</value>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 16</value>
   </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
+  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>nm</value>
+  </data>
+  <data name="&gt;&gt;ButtonGerman.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label14.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -644,8 +671,8 @@
   <data name="label16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 310</value>
   </data>
   <data name="&gt;&gt;label32.Parent" xml:space="preserve">
     <value>$this</value>
@@ -668,8 +695,11 @@
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
     <value>940, 540</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 20</value>
+  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;ColorDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 150</value>
@@ -677,20 +707,11 @@
   <data name="ColumnKelvin.Width" type="System.Int32, mscorlib">
     <value>72</value>
   </data>
-  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 16</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 240</value>
+  <data name="&gt;&gt;TextBoxInputParallax.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label23.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>Astronomical Object</value>
   </data>
   <data name="&gt;&gt;TextBoxInputMass.ZOrder" xml:space="preserve">
     <value>39</value>
@@ -698,14 +719,17 @@
   <data name="&gt;&gt;ButtonStyle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="ButtonDark.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="&gt;&gt;ButtonForeground.ZOrder" xml:space="preserve">
+    <value>31</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 16</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Observed Wavelength</value>
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;label32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -713,17 +737,23 @@
   <data name="ButtonForeground.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
-  <data name="ButtonGerman.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 30</value>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ToolStripMenuItemGerman.Text" xml:space="preserve">
     <value>German</value>
   </data>
   <data name="ColumnEventHorizon.Width" type="System.Int32, mscorlib">
     <value>119</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 16</value>
   </data>
   <data name="label33.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -737,20 +767,14 @@
   <data name="&gt;&gt;ButtonFrench.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ButtonBackground.Text" xml:space="preserve">
-    <value>Background</value>
-  </data>
-  <data name="&gt;&gt;ButtonForeground.Name" xml:space="preserve">
-    <value>ButtonForeground</value>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 16</value>
   </data>
   <data name="&gt;&gt;ButtonFont.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="TextBoxInputWavelengthRest.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 22</value>
-  </data>
-  <data name="ToolStripMenuItemLight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 26</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -770,6 +794,9 @@
   <data name="&gt;&gt;label17.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="label18.Text" xml:space="preserve">
     <value>nm</value>
   </data>
@@ -782,26 +809,23 @@
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
     <value>940, 480</value>
   </data>
-  <data name="&gt;&gt;ToolStripMenuItemForeColor.Name" xml:space="preserve">
-    <value>ToolStripMenuItemForeColor</value>
-  </data>
   <data name="MenuStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;TextBoxInputParallax.ZOrder" xml:space="preserve">
-    <value>45</value>
+  <data name="&gt;&gt;ColumnStarVelocity.Name" xml:space="preserve">
+    <value>ColumnStarVelocity</value>
   </data>
   <data name="ButtonEnglish.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
-  </data>
-  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;ButtonCalculate.ZOrder" xml:space="preserve">
     <value>38</value>
+  </data>
+  <data name="ButtonLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -818,17 +842,14 @@
   <data name="ButtonFrench.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 30</value>
   </data>
-  <data name="&gt;&gt;ToolStripMenuItemBackColor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ButtonFrench.Location" type="System.Drawing.Point, System.Drawing">
+    <value>900, 90</value>
   </data>
   <data name="&gt;&gt;label19.Name" xml:space="preserve">
     <value>label19</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownInputMass.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 260</value>
   </data>
   <data name="&gt;&gt;ToolStripMenuItemFont.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -842,14 +863,14 @@
   <data name="TextBoxInputWavelengthRest.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 260</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
     <value>940, 560</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 16</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
   </data>
   <data name="ButtonTheme.Text" xml:space="preserve">
     <value>Theme</value>
@@ -878,12 +899,6 @@
   <data name="ButtonCustom.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;ToolStripMenuItemTheme.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label15.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
   <data name="label30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -904,23 +919,20 @@
   <data name="&gt;&gt;label7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>46</value>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
   </data>
   <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
     <value>12, 16</value>
   </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 260</value>
-  </data>
   <data name="DataGridViewOutput.Size" type="System.Drawing.Size, System.Drawing">
     <value>630, 590</value>
   </data>
-  <data name="DataGridViewOutput.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 50</value>
+  <data name="ButtonLight.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
-  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 16</value>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;label9.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -928,11 +940,11 @@
   <data name="ColumnStarVelocity.HeaderText" xml:space="preserve">
     <value>Star Velocity</value>
   </data>
-  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="&gt;&gt;FontDialog.Type" xml:space="preserve">
     <value>System.Windows.Forms.FontDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonCalculate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 610</value>
   </data>
   <data name="&gt;&gt;TextBoxInputParallax.Name" xml:space="preserve">
     <value>TextBoxInputParallax</value>
@@ -997,8 +1009,8 @@
   <data name="&gt;&gt;FontDialog.Name" xml:space="preserve">
     <value>FontDialog</value>
   </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>21</value>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ButtonCalculate.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1021,6 +1033,9 @@
   <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
     <value>900, 620</value>
   </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ClientForm</value>
+  </data>
   <data name="NumericUpDownInputMass.Location" type="System.Drawing.Point, System.Drawing">
     <value>150, 560</value>
   </data>
@@ -1042,11 +1057,11 @@
   <data name="label23.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="ButtonCustom.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="ButtonEnglish.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -1074,14 +1089,465 @@
   <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 310</value>
+  <data name="TextBoxInputWavelengthObserved.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 16</value>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 460</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>°C</value>
   </data>
   <data name="DataGridViewOutput.ColumnHeadersHeight" type="System.Int32, mscorlib">
     <value>29</value>
+  </data>
+  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>900, 520</value>
+  </data>
+  <data name="&gt;&gt;ColumnEventHorizon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 30</value>
+  </data>
+  <data name="ButtonGerman.Location" type="System.Drawing.Point, System.Drawing">
+    <value>900, 130</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBoxInputWavelengthRest.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItemLight.Name" xml:space="preserve">
+    <value>ToolStripMenuItemLight</value>
+  </data>
+  <data name="ToolStripMenuItemLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 24</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>40</value>
+  </data>
+  <data name="ToolStripMenuItemGerman.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 26</value>
+  </data>
+  <data name="&gt;&gt;label26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonCustom.Text" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Kilogram</value>
+  </data>
+  <data name="&gt;&gt;label31.Name" xml:space="preserve">
+    <value>label31</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 16</value>
+  </data>
+  <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItemStyle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonForeground.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="label17.TabIndex" type="System.Int32, mscorlib">
+    <value>47</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewOutput.Name" xml:space="preserve">
+    <value>DataGridViewOutput</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ToolStripMenuItemBackColor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        H6TOkCNKdwu9AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ToolStripMenuItemFrench.Text" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Malin Space Science Systems Application</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextBoxInputWavelengthObserved.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 16</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="ButtonBackground.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 30</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Name" xml:space="preserve">
+    <value>MenuStrip</value>
+  </data>
+  <data name="&gt;&gt;ButtonDark.Name" xml:space="preserve">
+    <value>ButtonDark</value>
+  </data>
+  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItemLanguage.Name" xml:space="preserve">
+    <value>ToolStripMenuItemLanguage</value>
+  </data>
+  <data name="ToolStripMenuItemBackColor.Text" xml:space="preserve">
+    <value>Background Colour</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBoxInputCelsius.Name" xml:space="preserve">
+    <value>TextBoxInputCelsius</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColumnName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonStyle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="TextBoxInputCelsius.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ButtonForeground.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 30</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>37</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>940, 620</value>
+  </data>
+  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ButtonCustom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="TextBoxInputName.Text" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ButtonForeground.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ButtonCustom.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAL2SURBVDhPlY59
+        LNRxHMc/35+HynGM4zh3OQ91So7YzUVxx4XCUiZTnCMPLc1KrTXUzOh5WUlhRZuKtTXl5D/a8kdbW+uP
+        pqWSm92icOf45efxPt3FT7XWWu/t9d/n9fp+QerE6c0RuA/lePGGFU6cMW9nSI/2h3IAEFj497IFPN10
+        nAytNHoLULERdP0VBCsTyUTSJhiwnHCXL/8y6+ts4JqQb+46Qhi8RRBvEqxPhYU4OehTFeSjhwf4ryi/
+        jw0YYsKw0I/DzNZZZEtg6gLBgyowLb4DnHlNsCSDmpYHQcqK9nNsYCg8CPPDbA1W2XyD4IlEmB3sgSX8
+        AGhF322LQm/QSzZD1oq6PDbwwFdovqchtDXQVQALjVVgYuWBTpul+J3EVPsQzLszgfGRgHJFXw5MKsKx
+        2NdxzlRLcKSSYG4yGH/I7wHbLtnMpaSDsaUXsLUPsLkHUBYNExbVfjUwLNuCeSF2xqXrBPOVwIy9BFzs
+        J1iaR80UnoYpq8hy9xmgPBZmLOq21YDWzwfr0ompKQMWtI1Ajz6nMGUXoWtaYJ4VL7YCRmSsN7qq4iao
+        ww3fyNYk2qJzQePF0x0Tc+f7isFccgAML+5TCwlJYGzoBmx4Cph+3G1aoJKN2+4/NUk1fUKqfXqZo21m
+        8I+oArWH25dcqR2dHQt0ZTHFpOWC8dBZh1nf+GCDw54CA3X1lXlV+pX6QSTS+LcQ48hh+FwwewvIIteL
+        M2cnEs+S1NJFUvYYSXnnn5Q9Qar4zjwJVk2AT+hlkIpEY1qtFln4wgiDNKoag+QVGOCuMCYH1aByw0lU
+        uCROlYoqMYtfhCXcEKaFF4+R9sJx0Gg0Q1nqHKw+dx5pmkZxYMpozN4ujEpuxzBR5teiyG7MDGvGTH6+
+        4bakA8/4XMEGnpLWi/IwzSGQAbVarbPKjzo6/juwz0HCgFQq7bH+gsXJWTjmKU7Q8UXKYVeO72ggP1Hn
+        77ZdL14XMLrDRaULdZR9jljrOZLBkYzI13i9+Q7QP6nHaokMMQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>K</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 16</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;TextBoxInputName.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;TextBoxInputWavelengthRest.ZOrder" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ColumnStarDistance.HeaderText" xml:space="preserve">
+    <value>Star Distance</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="TextBoxInputCelsius.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 460</value>
+  </data>
+  <data name="ButtonLight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 30</value>
+  </data>
+  <data name="ButtonGerman.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bQAAAG0BjlwfygAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABeSURBVDhPY/j/
+        /z9FGKsgKZjB3T3UzMMjxIEcDNLL4OYW+p8SPAgM+OAdeoESzPDfO/Q/JZgKBoSFXaAEM/x/GPWfEjwY
+        DHgcZfb/fowDWRioF2sGIQVjFSQe/2cAAErBjzk5wnPXAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ButtonStyle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 30</value>
+  </data>
+  <data name="DataGridViewOutput.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ButtonEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 30</value>
+  </data>
+  <data name="&gt;&gt;TextBoxInputWavelengthObserved.ZOrder" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="ToolStripMenuItemStyle.Text" xml:space="preserve">
+    <value>Style</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 16</value>
+  </data>
+  <data name="label29.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="DataGridViewOutput.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="ButtonBackground.Text" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="&gt;&gt;label33.Name" xml:space="preserve">
+    <value>label33</value>
+  </data>
+  <data name="&gt;&gt;label32.Name" xml:space="preserve">
+    <value>label32</value>
+  </data>
+  <data name="ButtonEnglish.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bQAAAG0BjlwfygAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF4SURBVDhPpZPN
+        SwJhEMbfP81OBV2qUwQdOhZ06WAUdAwVPyq/khbEULTENE0zEzXK7OMQ1RZdgpDCQ2BIruW6xJNjrElu
+        oXn4wTAfzzs7M8sA9ISisxtY2JmatNiPJ1QDnKoV9Vx05ETrNhJk/4xTTU6zvsCqJjuq+2kEQlcYHHah
+        r59rsKhL4WNqpgHZsp9yYp4jSEYryokM2Oi4F3euCKRlO574e6jnY78KzNZjRW8Iko3DWeYGVMtk5SVN
+        HG+WNYg7cUR3b2G2ZZsCZGd89Vf1Kygd5KDVp5sdMVKXcXA5vB6eQtxLQhAqTYHKQx41zyZeCs+NnNYa
+        JicpgaGxBkoxmd4FWtuh9qjNmtePSv6xmSSUBYjBCEoXfPsnyMOgwdCAJKMF6Y1s2xBjUR41XwAC54ZB
+        l/weIq2CViLZORR923+ukWKFcx6SwYxrf/prjXQMkslaP45sx4e0FbyEGAjjfdUJRuf431OOOhLTij9I
+        Nyg6OwfsEzopw+saiTg+AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>51</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Observed Wavelength</value>
+  </data>
+  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>900, 500</value>
+  </data>
+  <data name="ToolStripMenuItemEnglish.Text" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ButtonCalculate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 30</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ColumnStarVelocity.Width" type="System.Int32, mscorlib">
+    <value>111</value>
+  </data>
+  <data name="ButtonDark.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ColumnStarDistance.Width" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonBackground.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ToolStripMenuItemLight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
+        1wAAAdcBjJIIaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAVOSURBVHhe7ZtX
+        iCxFFIbXrJhzVhB9MCIYUFHB8CAqihkxB+4VFTNmERTDg4ooig/mjBF8MIF6L4iCARV9MIIRTJjFgOn7
+        ljlQND3TYafDOvvDx87UdHedOl3xVO1Uh1obPhrg54nTgfDvAD9PnA6BcICfJ05zDoA5BwyYSAdMfCfo
+        0PchfABrmdB3LTn4O5F6Fn6Ho6e/9VuHwQLYc/rbGOSb/w1sq3/DsdBXHQPaqK3PmzAuHQ//QJ+dkBbe
+        v4fCWHUa+HDRGfOhL/KFpIXXGY3oCggnmNGWUEUrw95wHtwI98PdcBOcC/vDGlBF+0ArhQ9pbBUHrADW
+        lhfhLwgHjuJNuADWgSJdCd6jPa00zUXhSNhj+ttwLQ+XwfeQLWBZ/oDbYF0YppXgVNhp+ltPtC98Bmlh
+        HEYfh1NgB7CqLwHLwiawMxwHd8F3kN77M9gHLQK91mJwDcSIIT/BJWD7LyuH3sPhLUgd8QQsB73UUvAo
+        hLE64Wao2qmlsrmdBDoxnvsKrAq9km8+Lfyv4IxsXLKJvAPx/JfBptMbXQth3FewDRQpYoK/wLvwNNjO
+        N4Q8rQK+/cjnAeiF9oNo806Z7eDKaC+IwqQ4nN0B60NWq8F7ENeeAJ3KMT56e51wBJSVI8DV8BS8Ddk5
+        gjXjIMhqc7CJeY2jxerQmS6HMPgeE2Yg3+48+BjimTr1HMjqLIhrrjehC60IP4JG+EbWg3FoabgOUicc
+        DKmsPfYbkfdMRpraOhnCSGvCuOWEKZ5vc8j2CU574/ezTWhbL4GZ/wlNhbTSmnC7CYmWgaiBr5vQphyS
+        otN6xoSGZHP4BMzH/DaAVPeBv9lMWu0MXYKasdghNSlXkpGXi55UJ0L85lK6Nbmej4x3NaFB+Wajtj1p
+        QqLtIew434Q6cs3teOvmRIqx+mG7tgYzIuM2dnZjGmzPn0rnhB2uO/JUWD6no/GQLMbs8xRtT9oIlztN
+        Ni+XxanMO+y414QcFZavjgNcs8c19sZNyxljnj2uQMOOYROxwvJZDawOQ6tIjtImUCZsNVM58XHtkLVn
+        TQg7DNXlqU75CmUAMzLexYSOtCOEHReZ0JZcAUbGzti6UjpE+kZbkzO/WAI/ZkJHegTCAXnL50Zl6NqM
+        DVd1EaczzwiVuZxuXRdCeN8ZWdtKq/+lJrQtm4ELIQ14H+yp25LjfwxveWuE1nQLxFswnteWLobI1/BZ
+        Z7IWRDs0MLEpNK1tIWreOAMxtZWuyJxZOTlpShb2U4j83DPohR6EMOoNaGJ26N6AZ4oin4ehN1tlBi48
+        lhLGfQ5Vt85HaTv4GuL5C8E8eyWDpM9BGKnBW8FMZeFdBcZzDaO789xLOTy5LA1jv4GNoK4MlX8J8bw7
+        YXHotdwnTOMFL0Ddtpouu28FN0t7Iav2qOrtpOhVCOPrHFvZDWK94Z6gjs2Tzt0dai9tqyoOJDkDG9XR
+        +VuM16+ZUFEepvBe89nahCE6A7zO5jaOPmeksqexinr6KIRsYUJJuf/v8RjvMxw2SqdD5NGoE+ocRTsA
+        wrgzTSgpj8rEfUeZMEI2gXRK7oZpme35SvKIbFr4sqexNoYwTCPLyg3PuG8zEwpk5+iaIO5xCK5S40bK
+        oc0DTj64SuFVGrV1CvtQSWI3SMqeBMk6oajpVJLHXzz5UeewdBhUlyrSCTfAt+A5w14or1BVmPWKgli1
+        y8pr5xwwYNZr4h0QI4iTorL6XzkgzvJ4+Mm9vCI5sfHEh/f8YMJs11UQb9NokW93FFF48X8JZr08JG2s
+        MApVli+gk9NfTchAqcGMMv87YLX3zbdQ+Kmp/wAnGDhBdDWTbwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="ButtonGerman.Text" xml:space="preserve">
+    <value>German</value>
+  </data>
+  <data name="&gt;&gt;ButtonTheme.ZOrder" xml:space="preserve">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonFrench.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;ToolStripMenuItemFont.Name" xml:space="preserve">
+    <value>ToolStripMenuItemFont</value>
+  </data>
+  <data name="&gt;&gt;ButtonFont.Name" xml:space="preserve">
+    <value>ButtonFont</value>
+  </data>
+  <data name="&gt;&gt;ButtonLanguage.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TextBoxInputParallax.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="ButtonLanguage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>900, 50</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1370,469 +1836,6 @@
         //gAP/////////////////////////////////////////////8=
 </value>
   </data>
-  <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>900, 520</value>
-  </data>
-  <data name="&gt;&gt;ColumnEventHorizon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ButtonFont.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 30</value>
-  </data>
-  <data name="ButtonGerman.Location" type="System.Drawing.Point, System.Drawing">
-    <value>900, 130</value>
-  </data>
-  <data name="&gt;&gt;TextBoxInputWavelengthRest.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ToolStripMenuItemLight.Name" xml:space="preserve">
-    <value>ToolStripMenuItemLight</value>
-  </data>
-  <data name="ToolStripMenuItemLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 24</value>
-  </data>
-  <data name="&gt;&gt;ToolStripMenuItemLight.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>40</value>
-  </data>
-  <data name="ToolStripMenuItemGerman.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 26</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ButtonCustom.Text" xml:space="preserve">
-    <value>Custom</value>
-  </data>
-  <data name="label25.Text" xml:space="preserve">
-    <value>Kilogram</value>
-  </data>
-  <data name="&gt;&gt;label31.Name" xml:space="preserve">
-    <value>label31</value>
-  </data>
-  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 16</value>
-  </data>
-  <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ButtonTheme.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="ButtonForeground.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label17.TabIndex" type="System.Int32, mscorlib">
-    <value>47</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;DataGridViewOutput.Name" xml:space="preserve">
-    <value>DataGridViewOutput</value>
-  </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ToolStripMenuItemBackColor.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        H6TOkCNKdwu9AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ToolStripMenuItemFrench.Text" xml:space="preserve">
-    <value>French</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Parallax Angle</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Malin Space Science Systems Application</value>
-  </data>
-  <data name="&gt;&gt;label33.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 16</value>
-  </data>
-  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 16</value>
-  </data>
-  <data name="&gt;&gt;label26.Name" xml:space="preserve">
-    <value>label26</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="ButtonBackground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 30</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip.Name" xml:space="preserve">
-    <value>MenuStrip</value>
-  </data>
-  <data name="&gt;&gt;ButtonDark.Name" xml:space="preserve">
-    <value>ButtonDark</value>
-  </data>
-  <data name="&gt;&gt;label33.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label28.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;ToolStripMenuItemLanguage.Name" xml:space="preserve">
-    <value>ToolStripMenuItemLanguage</value>
-  </data>
-  <data name="ToolStripMenuItemBackColor.Text" xml:space="preserve">
-    <value>Background Colour</value>
-  </data>
-  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TextBoxInputCelsius.Name" xml:space="preserve">
-    <value>TextBoxInputCelsius</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ColumnName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TextBoxInputCelsius.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="ButtonForeground.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 30</value>
-  </data>
-  <data name="&gt;&gt;label27.Name" xml:space="preserve">
-    <value>label27</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;ColumnStarVelocity.Name" xml:space="preserve">
-    <value>ColumnStarVelocity</value>
-  </data>
-  <data name="ToolStripMenuItemStyle.Text" xml:space="preserve">
-    <value>Style</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label24.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>940, 620</value>
-  </data>
-  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;ButtonCustom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TextBoxInputName.Text" xml:space="preserve">
-    <value>Unknown</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ButtonCustom.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        cAAAAHABznhikwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAL2SURBVDhPlY59
-        LNRxHMc/35+HynGM4zh3OQ91So7YzUVxx4XCUiZTnCMPLc1KrTXUzOh5WUlhRZuKtTXl5D/a8kdbW+uP
-        pqWSm92icOf45efxPt3FT7XWWu/t9d/n9fp+QerE6c0RuA/lePGGFU6cMW9nSI/2h3IAEFj497IFPN10
-        nAytNHoLULERdP0VBCsTyUTSJhiwnHCXL/8y6+ts4JqQb+46Qhi8RRBvEqxPhYU4OehTFeSjhwf4ryi/
-        jw0YYsKw0I/DzNZZZEtg6gLBgyowLb4DnHlNsCSDmpYHQcqK9nNsYCg8CPPDbA1W2XyD4IlEmB3sgSX8
-        AGhF322LQm/QSzZD1oq6PDbwwFdovqchtDXQVQALjVVgYuWBTpul+J3EVPsQzLszgfGRgHJFXw5MKsKx
-        2NdxzlRLcKSSYG4yGH/I7wHbLtnMpaSDsaUXsLUPsLkHUBYNExbVfjUwLNuCeSF2xqXrBPOVwIy9BFzs
-        J1iaR80UnoYpq8hy9xmgPBZmLOq21YDWzwfr0ompKQMWtI1Ajz6nMGUXoWtaYJ4VL7YCRmSsN7qq4iao
-        ww3fyNYk2qJzQePF0x0Tc+f7isFccgAML+5TCwlJYGzoBmx4Cph+3G1aoJKN2+4/NUk1fUKqfXqZo21m
-        8I+oArWH25dcqR2dHQt0ZTHFpOWC8dBZh1nf+GCDw54CA3X1lXlV+pX6QSTS+LcQ48hh+FwwewvIIteL
-        M2cnEs+S1NJFUvYYSXnnn5Q9Qar4zjwJVk2AT+hlkIpEY1qtFln4wgiDNKoag+QVGOCuMCYH1aByw0lU
-        uCROlYoqMYtfhCXcEKaFF4+R9sJx0Gg0Q1nqHKw+dx5pmkZxYMpozN4ujEpuxzBR5teiyG7MDGvGTH6+
-        4bakA8/4XMEGnpLWi/IwzSGQAbVarbPKjzo6/juwz0HCgFQq7bH+gsXJWTjmKU7Q8UXKYVeO72ggP1Hn
-        77ZdL14XMLrDRaULdZR9jljrOZLBkYzI13i9+Q7QP6nHaokMMQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="label12.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="ButtonLight.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 30</value>
-  </data>
-  <data name="label29.Text" xml:space="preserve">
-    <value>K</value>
-  </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>12, 16</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="&gt;&gt;TextBoxInputName.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;TextBoxInputWavelengthRest.ZOrder" xml:space="preserve">
-    <value>48</value>
-  </data>
-  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ColumnStarDistance.HeaderText" xml:space="preserve">
-    <value>Star Distance</value>
-  </data>
-  <data name="&gt;&gt;label13.Name" xml:space="preserve">
-    <value>label13</value>
-  </data>
-  <data name="TextBoxInputCelsius.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 460</value>
-  </data>
-  <data name="&gt;&gt;TextBoxInputParallax.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ButtonGerman.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        bQAAAG0BjlwfygAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABeSURBVDhPY/j/
-        /z9FGKsgKZjB3T3UzMMjxIEcDNLL4OYW+p8SPAgM+OAdeoESzPDfO/Q/JZgKBoSFXaAEM/x/GPWfEjwY
-        DHgcZfb/fowDWRioF2sGIQVjFSQe/2cAAErBjzk5wnPXAAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="ButtonStyle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 30</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>°C</value>
-  </data>
-  <data name="DataGridViewOutput.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="label32.Text" xml:space="preserve">
-    <value>Parsec</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="ButtonEnglish.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 30</value>
-  </data>
-  <data name="&gt;&gt;TextBoxInputWavelengthObserved.ZOrder" xml:space="preserve">
-    <value>50</value>
-  </data>
-  <data name="ButtonCalculate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 610</value>
-  </data>
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 16</value>
-  </data>
-  <data name="label29.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="DataGridViewOutput.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label21.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>ClientForm</value>
-  </data>
-  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label33.Name" xml:space="preserve">
-    <value>label33</value>
-  </data>
-  <data name="&gt;&gt;label32.Name" xml:space="preserve">
-    <value>label32</value>
-  </data>
-  <data name="ButtonEnglish.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        bQAAAG0BjlwfygAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF4SURBVDhPpZPN
-        SwJhEMbfP81OBV2qUwQdOhZ06WAUdAwVPyq/khbEULTENE0zEzXK7OMQ1RZdgpDCQ2BIruW6xJNjrElu
-        oXn4wTAfzzs7M8sA9ISisxtY2JmatNiPJ1QDnKoV9Vx05ETrNhJk/4xTTU6zvsCqJjuq+2kEQlcYHHah
-        r59rsKhL4WNqpgHZsp9yYp4jSEYryokM2Oi4F3euCKRlO574e6jnY78KzNZjRW8Iko3DWeYGVMtk5SVN
-        HG+WNYg7cUR3b2G2ZZsCZGd89Vf1Kygd5KDVp5sdMVKXcXA5vB6eQtxLQhAqTYHKQx41zyZeCs+NnNYa
-        JicpgaGxBkoxmd4FWtuh9qjNmtePSv6xmSSUBYjBCEoXfPsnyMOgwdCAJKMF6Y1s2xBjUR41XwAC54ZB
-        l/weIq2CViLZORR923+ukWKFcx6SwYxrf/prjXQMkslaP45sx4e0FbyEGAjjfdUJRuf431OOOhLTij9I
-        Nyg6OwfsEzopw+saiTg+AAAAAElFTkSuQmCC
-</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>51</value>
-  </data>
-  <data name="ButtonGerman.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;label26.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>900, 500</value>
-  </data>
-  <data name="ToolStripMenuItemEnglish.Text" xml:space="preserve">
-    <value>English</value>
-  </data>
-  <data name="ButtonFrench.Location" type="System.Drawing.Point, System.Drawing">
-    <value>900, 90</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label18.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="ColumnStarVelocity.Width" type="System.Int32, mscorlib">
-    <value>111</value>
-  </data>
-  <data name="ButtonDark.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="ColumnStarDistance.Width" type="System.Int32, mscorlib">
-    <value>116</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>1089, 709</value>
-  </data>
-  <data name="ButtonBackground.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ToolStripMenuItemLight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="ButtonGerman.Text" xml:space="preserve">
-    <value>German</value>
-  </data>
-  <data name="&gt;&gt;ButtonTheme.ZOrder" xml:space="preserve">
-    <value>36</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ButtonFrench.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;label20.Name" xml:space="preserve">
-    <value>label20</value>
-  </data>
-  <data name="&gt;&gt;ToolStripMenuItemFont.Name" xml:space="preserve">
-    <value>ToolStripMenuItemFont</value>
-  </data>
-  <data name="&gt;&gt;ButtonFont.Name" xml:space="preserve">
-    <value>ButtonFont</value>
-  </data>
-  <data name="&gt;&gt;ButtonLanguage.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="TextBoxInputParallax.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="ButtonLanguage.Location" type="System.Drawing.Point, System.Drawing">
-    <value>900, 50</value>
-  </data>
-  <data name="&gt;&gt;ButtonForeground.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
   <data name="ButtonCustom.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 30</value>
   </data>
@@ -1842,8 +1845,8 @@
   <data name="&gt;&gt;TextBoxInputName.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 16</value>
+  <data name="&gt;&gt;ButtonStyle.Name" xml:space="preserve">
+    <value>ButtonStyle</value>
   </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
@@ -1851,23 +1854,20 @@
   <data name="&gt;&gt;ButtonEnglish.Name" xml:space="preserve">
     <value>ButtonEnglish</value>
   </data>
-  <data name="ToolStripMenuItemForeColor.Text" xml:space="preserve">
-    <value>Foreground Colour</value>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 16</value>
   </data>
-  <data name="&gt;&gt;label31.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;ToolStripMenuItemLight.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="TextBoxInputWavelengthObserved.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 22</value>
+  <data name="ToolStripMenuItemCustom.Text" xml:space="preserve">
+    <value>Custom</value>
   </data>
   <data name="label24.TabIndex" type="System.Int32, mscorlib">
     <value>54</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1878,6 +1878,9 @@
   <data name="&gt;&gt;label29.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;ToolStripMenuItemTheme.Name" xml:space="preserve">
+    <value>ToolStripMenuItemTheme</value>
+  </data>
   <data name="&gt;&gt;ToolStripMenuItemBackColor.Name" xml:space="preserve">
     <value>ToolStripMenuItemBackColor</value>
   </data>
@@ -1886,9 +1889,6 @@
   </data>
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
-  </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;label22.Name" xml:space="preserve">
     <value>label22</value>
@@ -1905,8 +1905,8 @@
   <data name="&gt;&gt;ToolStripMenuItemGerman.Name" xml:space="preserve">
     <value>ToolStripMenuItemGerman</value>
   </data>
-  <data name="label22.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
+  <data name="TextBoxInputParallax.Text" xml:space="preserve">
+    <value>0.547</value>
   </data>
   <data name="ButtonForeground.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1929,9 +1929,6 @@
   <data name="&gt;&gt;ButtonEnglish.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;ButtonCustom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;TextBoxInputParallax.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -1941,17 +1938,14 @@
   <data name="TextBoxInputMass.Text" xml:space="preserve">
     <value>8.2</value>
   </data>
-  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Parsec</value>
   </data>
   <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="label25.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1984,6 +1978,9 @@
   <data name="label5.Text" xml:space="preserve">
     <value>STAR DISTANCE</value>
   </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Nanometre</value>
+  </data>
   <data name="TextBoxInputName.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
@@ -2002,9 +1999,6 @@
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>158, 20</value>
   </data>
-  <data name="&gt;&gt;label29.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label20.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -2014,11 +2008,11 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Wavelength At Rest</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="&gt;&gt;TextBoxInputName.Name" xml:space="preserve">
     <value>TextBoxInputName</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>NAME</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>STAR VELOCITY</value>
@@ -2029,14 +2023,20 @@
   <data name="ToolStripMenuItemFrench.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 26</value>
   </data>
-  <data name="&gt;&gt;label26.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
   </data>
-  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label30.Text" xml:space="preserve">
+    <value>Metre</value>
+  </data>
+  <data name="&gt;&gt;ButtonCalculate.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 540</value>
+  </data>
+  <data name="&gt;&gt;label29.Name" xml:space="preserve">
+    <value>label29</value>
   </data>
   <data name="&gt;&gt;ToolStripMenuItemGerman.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2044,8 +2044,8 @@
   <data name="ButtonLight.Location" type="System.Drawing.Point, System.Drawing">
     <value>900, 130</value>
   </data>
-  <data name="label30.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
+  <data name="&gt;&gt;label32.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="label26.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -2059,17 +2059,17 @@
   <data name="label33.Text" xml:space="preserve">
     <value>Metre per second</value>
   </data>
-  <data name="&gt;&gt;label29.Name" xml:space="preserve">
-    <value>label29</value>
+  <data name="&gt;&gt;label30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ButtonFont.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
+    <value>21</value>
   </data>
-  <data name="ButtonStyle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Parallax Angle</value>
   </data>
   <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
@@ -2083,17 +2083,14 @@
   <data name="label10.Text" xml:space="preserve">
     <value>x 10</value>
   </data>
-  <data name="&gt;&gt;ButtonTheme.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="TextBoxInputMass.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 22</value>
-  </data>
-  <data name="&gt;&gt;TextBoxInputMass.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>KELVIN</value>
@@ -2107,8 +2104,8 @@
   <data name="label13.Text" xml:space="preserve">
     <value>nm</value>
   </data>
-  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip</value>
   </data>
   <data name="&gt;&gt;ToolStripMenuItemDark.Name" xml:space="preserve">
     <value>ToolStripMenuItemDark</value>
@@ -2116,8 +2113,8 @@
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="ButtonGerman.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="TextBoxInputName.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 100</value>
@@ -2128,8 +2125,8 @@
   <data name="&gt;&gt;ToolStripMenuItemCustom.Name" xml:space="preserve">
     <value>ToolStripMenuItemCustom</value>
   </data>
-  <data name="ButtonLanguage.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;ToolStripMenuItemDark.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ColumnName.HeaderText" xml:space="preserve">
     <value>Name</value>
@@ -2206,8 +2203,8 @@
   <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>NAME</value>
+  <data name="label22.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
   </data>
   <data name="&gt;&gt;ButtonLight.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2224,8 +2221,8 @@
   <data name="TextBoxInputWavelengthObserved.Text" xml:space="preserve">
     <value>500.1</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Astronomical Object</value>
   </data>
   <data name="ButtonFrench.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2236,11 +2233,8 @@
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="ButtonCalculate.Text" xml:space="preserve">
-    <value>Calculate</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="ButtonCustom.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
   <data name="ButtonCustom.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2251,14 +2245,17 @@
   <data name="ButtonStyle.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;ButtonLanguage.ZOrder" xml:space="preserve">
-    <value>20</value>
+  <data name="&gt;&gt;ToolStripMenuItemBackColor.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ButtonBackground.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="ToolStripMenuItemBackColor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 26</value>
   </data>
-  <data name="label30.Text" xml:space="preserve">
-    <value>Metre</value>
+  <data name="label30.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="ToolStripMenuItemLight.Text" xml:space="preserve">
+    <value>Light</value>
   </data>
   <data name="&gt;&gt;label28.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -2336,8 +2333,8 @@
   <data name="label28.Text" xml:space="preserve">
     <value>m</value>
   </data>
-  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>27</value>
@@ -2354,14 +2351,14 @@
   <data name="&gt;&gt;ButtonFrench.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="ButtonCalculate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 30</value>
+  <data name="ButtonDark.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
   </data>
   <data name="label29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
   </data>
   <data name="&gt;&gt;ColumnKelvin.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2369,8 +2366,8 @@
   <data name="&gt;&gt;ToolStripMenuItemForeColor.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ToolStripMenuItemBackColor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 26</value>
+  <data name="&gt;&gt;ToolStripMenuItemForeColor.Name" xml:space="preserve">
+    <value>ToolStripMenuItemForeColor</value>
   </data>
   <data name="ColumnKelvin.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2378,8 +2375,8 @@
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;ButtonForeground.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;ButtonGerman.ZOrder" xml:space="preserve">
     <value>18</value>
@@ -2399,14 +2396,14 @@
   <data name="&gt;&gt;label11.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ColorDialog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 16</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;ColorDialog.Name" xml:space="preserve">
     <value>ColorDialog</value>
@@ -2414,8 +2411,8 @@
   <data name="&gt;&gt;label23.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBoxInputWavelengthObserved.Name" xml:space="preserve">
-    <value>TextBoxInputWavelengthObserved</value>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="ButtonLight.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2428,8 +2425,8 @@
         Yz4x7UBnoADnVspsI1BRljBVAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 460</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 20</value>
   </data>
   <data name="&gt;&gt;NumericUpDownInputMass.ZOrder" xml:space="preserve">
     <value>16</value>
@@ -2437,14 +2434,14 @@
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 16</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1089, 709</value>
   </data>
   <data name="&gt;&gt;label24.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;label26.Name" xml:space="preserve">
+    <value>label26</value>
   </data>
   <data name="ButtonDark.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2463,6 +2460,9 @@
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
+  <data name="&gt;&gt;TextBoxInputMass.Name" xml:space="preserve">
+    <value>TextBoxInputMass</value>
+  </data>
   <data name="&gt;&gt;ToolStripMenuItemEnglish.Name" xml:space="preserve">
     <value>ToolStripMenuItemEnglish</value>
   </data>
@@ -2472,8 +2472,8 @@
   <data name="&gt;&gt;label22.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;TextBoxInputMass.Name" xml:space="preserve">
-    <value>TextBoxInputMass</value>
+  <data name="&gt;&gt;NumericUpDownInputMass.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="ColumnEventHorizon.MinimumWidth" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2496,20 +2496,14 @@
   <data name="label31.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
   </data>
-  <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 16</value>
-  </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="TextBoxInputWavelengthObserved.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label30.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="MenuStrip.Text" xml:space="preserve">
-    <value>menuStrip</value>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonBackground.Name" xml:space="preserve">
     <value>ButtonBackground</value>
@@ -2517,8 +2511,8 @@
   <data name="&gt;&gt;label19.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label32.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
     <value>23</value>
@@ -2538,8 +2532,8 @@
   <data name="label15.Text" xml:space="preserve">
     <value>"</value>
   </data>
-  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
   </data>
   <data name="&gt;&gt;TextBoxInputWavelengthRest.Name" xml:space="preserve">
     <value>TextBoxInputWavelengthRest</value>
@@ -2553,11 +2547,11 @@
   <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="&gt;&gt;ButtonCustom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ToolStripMenuItemStyle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 24</value>
+  <data name="ButtonDark.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="ButtonBackground.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -2565,8 +2559,8 @@
   <data name="&gt;&gt;label16.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="ToolStripMenuItemEnglish.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 26</value>
@@ -2577,14 +2571,14 @@
   <data name="ButtonForeground.Location" type="System.Drawing.Point, System.Drawing">
     <value>900, 250</value>
   </data>
-  <data name="&gt;&gt;ButtonBackground.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TextBoxInputCelsius.Parent" xml:space="preserve">
+  <data name="ButtonCalculate.Text" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="&gt;&gt;TextBoxInputMass.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TextBoxInputWavelengthObserved.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>$this</value>
@@ -2592,41 +2586,47 @@
   <data name="label19.Location" type="System.Drawing.Point, System.Drawing">
     <value>900, 600</value>
   </data>
-  <data name="ButtonBackground.Location" type="System.Drawing.Point, System.Drawing">
-    <value>900, 290</value>
+  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  <data name="ToolStripMenuItemLight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 26</value>
   </data>
-  <data name="&gt;&gt;ButtonCalculate.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ButtonTheme.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 16</value>
   </data>
+  <data name="&gt;&gt;ButtonBackground.ZOrder" xml:space="preserve">
+    <value>30</value>
+  </data>
   <data name="ButtonLight.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="&gt;&gt;label15.Name" xml:space="preserve">
-    <value>label15</value>
+  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 16</value>
   </data>
   <data name="ButtonForeground.Text" xml:space="preserve">
     <value>Foreground</value>
   </data>
-  <data name="&gt;&gt;ButtonBackground.ZOrder" xml:space="preserve">
-    <value>30</value>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
   </data>
-  <data name="&gt;&gt;ButtonGerman.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label22.Text" xml:space="preserve">
-    <value>Nanometre</value>
+  <data name="&gt;&gt;ToolStripMenuItemTheme.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label31.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TextBoxInputWavelengthObserved.Name" xml:space="preserve">
+    <value>TextBoxInputWavelengthObserved</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 16</value>
@@ -2634,8 +2634,8 @@
   <data name="TextBoxInputCelsius.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 22</value>
   </data>
-  <data name="&gt;&gt;ToolStripMenuItemTheme.Name" xml:space="preserve">
-    <value>ToolStripMenuItemTheme</value>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 240</value>
   </data>
   <metadata name="ColorDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>148, 16</value>
@@ -2649,10 +2649,10 @@
   <metadata name="ColumnEventHorizon.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="ColumnStarVelocity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ColumnStarVelocity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="ColumnKelvin.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
