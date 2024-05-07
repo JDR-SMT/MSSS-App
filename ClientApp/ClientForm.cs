@@ -380,13 +380,13 @@ namespace ClientApp
 			// set the font of all controls
 			foreach (Control control in Controls)
 			{
-				control.Font = font;
-
 				// set the font of the DataGridView cells
 				if (control is DataGridView dataGridView)
 				{
-					dataGridView.DefaultCellStyle.Font = font;
+					dataGridView.DefaultCellStyle.Font = null;
 				}
+
+				control.Font = font;
 			}
 		}
 		#endregion
